@@ -5,7 +5,7 @@ export default function BasketballProgramWebsite() {
     "Compete with toughness and pride",
     "Develop leaders",
     "Build discipline daily",
-    "Represent Judge with pride",
+    "Represent Judge Memorial with pride",
   ];
 
   const championships = [1980, 2006, 2008, 2024];
@@ -58,20 +58,21 @@ export default function BasketballProgramWebsite() {
   ];
 
   const rosterPlayers = [
-    { id: "kalou-ruot", number: 5, name: "Kalou Ruot", details: "F • 6'8\" • Class of 2028" },
+  { id: "kalou-ruot", number: 5, name: "Kalou Ruot", details: "F • 6'8\" • Class of 2028" },
+];
 
-  const alumni = [
-    { id: "aymen-ismail", name: "Aymen Ismail", school: "CSU Pueblo", year: "Class of 2026 • Committed", badge: "CSUP" },
-    { id: "massaer-mbodj", name: "Massaer Mbodj", school: "Western Wyoming CC", year: "Class of 2026 • Committed", badge: "WW" },
-    { id: "aj-peek", name: "AJ Peek", school: "United States Merchant Marine Academy", year: "Class of 2026 • Committed", badge: "USMMA" },
-    { id: "jj-apathjang", name: "JJ Apathjang", school: "Northern Kentucky University", year: "Class of 2025 • Committed", badge: "NKU" },
-    { id: "deng-deng", name: "Deng Deng", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
-    { id: "majak-deng", name: "Majak Deng", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
-    { id: "longar-alor", name: "Longar Alor", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
-    { id: "aaydan-saucedo", name: "Aaydan Saucedo", school: "University of Puget Sound", year: "Class of 2024 • Committed", badge: "UPS" },
-    { id: "manase-mangala", name: "Manase Mangala", school: "Wenatchee Valley College", year: "Class of 2023 • Committed", badge: "WVC" },
-    { id: "dom-burns", name: "Dom Burns", school: "Carroll University (WI)", year: "Class of 2021 • Committed", badge: "CU" },
-  ];
+const alumni = [
+  { id: "aymen-ismail", name: "Aymen Ismail", school: "CSU Pueblo", year: "Class of 2026 • Committed", badge: "CSUP" },
+  { id: "massaer-mbodj", name: "Massaer Mbodj", school: "Western Wyoming CC", year: "Class of 2026 • Committed", badge: "WW" },
+  { id: "aj-peek", name: "AJ Peek", school: "United States Merchant Marine Academy", year: "Class of 2026 • Committed", badge: "USMMA" },
+  { id: "jj-apathjang", name: "JJ Apathjang", school: "Northern Kentucky University", year: "Class of 2025 • Committed", badge: "NKU" },
+  { id: "deng-deng", name: "Deng Deng", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
+  { id: "majak-deng", name: "Majak Deng", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
+  { id: "longar-alor", name: "Longar Alor", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
+  { id: "aaydan-saucedo", name: "Aaydan Saucedo", school: "University of Puget Sound", year: "Class of 2024 • Committed", badge: "UPS" },
+  { id: "manase-mangala", name: "Manase Mangala", school: "Wenatchee Valley College", year: "Class of 2023 • Committed", badge: "WVC" },
+  { id: "dom-burns", name: "Dom Burns", school: "Carroll University (WI)", year: "Class of 2021 • Committed", badge: "CU" },
+];
 
   const newsItems = [
     {
