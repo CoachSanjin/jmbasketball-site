@@ -63,7 +63,7 @@ export default function BasketballProgramWebsite() {
       number: 5,
       name: "Kalou Ruot",
       details: "F • 6'8\" • Class of 2028",
-      image: "/kalou.jpg",
+      image: "/kalou-ruot.jpg",
     },
   ];
 
