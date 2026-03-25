@@ -412,7 +412,7 @@ export default function BasketballProgramWebsite() {
                   <img src={player.image} alt={player.name} className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
                   <div className="absolute right-3 top-3 flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-[#c9a227]/40 bg-black/30 backdrop-blur-sm">
-                    <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+                    <img src="/jm-logo.png" alt="JM Basketball logo" className="h-full w-full object-cover" />
                   </div>
                   <div className="absolute bottom-3 left-3 rounded-full border border-[#c9a227]/30 bg-black/45 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#f3d36b] backdrop-blur-sm">
                     Featured Prospect
@@ -440,53 +440,92 @@ export default function BasketballProgramWebsite() {
       </section>
 
       <section id="coaches" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
-        <div className="mb-8">
-          <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Coaching Staff</div>
-          <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Leadership of the Program</h2>
+        <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end md:gap-6">
+          <div>
+            <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Coaching Staff</div>
+            <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Leadership of the Program</h2>
+          </div>
+          <p className="max-w-2xl text-white/65">
+            A program built on structure, development, and daily accountability across every level.
+          </p>
         </div>
 
-        <div className="grid items-start gap-8 md:grid-cols-2">
-          <div className="rounded-[2rem] border border-[#c9a227]/20 bg-gradient-to-br from-[#7a0c0c]/30 to-black/40 p-8">
-            <div className="mb-6 text-sm uppercase tracking-[0.3em] text-[#c9a227]">Staff Lineup</div>
-            <div className="grid gap-4">
-              {coaches.map((coach) => (
-                <div key={coach.name} className="flex items-center gap-4 rounded-[1.5rem] border border-white/10 bg-black/25 p-4">
-                  <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl border border-[#c9a227]/30 bg-[#7a0c0c]">
-                    {coach.image ? (
-                      <img src={coach.image} alt={coach.name} className="h-full w-full object-cover" />
-                    ) : (
-                      <span className="text-lg font-black text-[#f3d36b]">{coach.initials}</span>
-                    )}
-                  </div>
-                  <div>
-                    <div className="text-lg font-semibold text-white">{coach.name}</div>
-                    <div className="text-sm uppercase tracking-[0.18em] text-white/55">{coach.role}</div>
-                  </div>
+        <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
+          <div className="overflow-hidden rounded-[2rem] border border-[#c9a227]/25 bg-gradient-to-br from-[#7a0c0c]/35 via-black to-[#120606] shadow-2xl shadow-black/25">
+            <div className="grid gap-0 md:grid-cols-[0.95fr_1.05fr]">
+              <div className="relative min-h-[340px] md:min-h-full">
+                <img src="/sanjin.jpg" alt="Sanjin Kolovrat" className="absolute inset-0 h-full w-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/15 to-transparent md:bg-gradient-to-r md:from-black/20 md:via-transparent md:to-black/10" />
+                <div className="absolute left-4 top-4 rounded-full border border-[#c9a227]/35 bg-black/45 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#f3d36b] backdrop-blur-sm">
+                  Head Coach
                 </div>
-              ))}
+              </div>
+
+              <div className="flex flex-col justify-between p-6 sm:p-8">
+                <div>
+                  <div className="text-sm uppercase tracking-[0.28em] text-white/45">Featured Staff Profile</div>
+                  <h3 className="mt-3 text-3xl font-black text-white sm:text-4xl">Sanjin Kolovrat</h3>
+                  <div className="mt-3 inline-flex rounded-full border border-[#c9a227]/25 bg-[#c9a227]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#f3d36b]">
+                    Head Coach • JM Basketball
+                  </div>
+                  <p className="mt-6 max-w-xl text-base leading-8 text-white/75 sm:text-lg">
+                    Leading Judge Memorial Catholic HS basketball with a focus on player development, discipline, and building a championship culture on and off the court.
+                  </p>
+                </div>
+
+                <div className="mt-8 grid gap-4 sm:grid-cols-3">
+                  {[
+                    { label: "Program", value: "4 Levels" },
+                    { label: "Standard", value: "Daily" },
+                    { label: "Connect", value: "@CoachSanjin" },
+                  ].map((item) => (
+                    <div key={item.label} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+                      <div className="text-[11px] uppercase tracking-[0.2em] text-white/45">{item.label}</div>
+                      <div className="mt-2 text-base font-semibold text-white">{item.value}</div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <a
+                    href="https://twitter.com/CoachSanjin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-2xl bg-[#c9a227] px-5 py-3 text-sm font-semibold text-[#3a0a0a] transition hover:scale-[1.02]"
+                  >
+                    Follow Head Coach
+                  </a>
+                  <a
+                    href="#contact"
+                    className="rounded-2xl border border-[#c9a227]/35 px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#c9a227]/10"
+                  >
+                    Contact Program
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="space-y-6">
-            {coaches.map((coach) => (
-              <div key={`${coach.name}-bio`} className="rounded-[1.5rem] border border-[#c9a227]/20 bg-black/30 p-6">
-                <div className="text-sm uppercase tracking-[0.25em] text-white/50">{coach.role}</div>
-                <div className="mt-2 text-2xl font-bold">{coach.name}</div>
-                {coach.socialHandle && (
-                  <div className="mt-2 text-sm font-semibold">
-                    {coach.socialLabel}
-                    <a href={coach.socialUrl} target="_blank" rel="noopener noreferrer" className="ml-2 text-[#f3d36b] hover:underline">
-                      {coach.socialHandle}
-                    </a>
+          <div className="grid gap-5">
+            {coaches.filter((coach) => coach.role !== "Head Coach").map((coach) => (
+              <div key={coach.name} className="group overflow-hidden rounded-[1.75rem] border border-[#c9a227]/20 bg-[#7a0c0c]/18 transition-all duration-300 hover:border-[#c9a227]/40 hover:shadow-xl hover:shadow-black/20">
+                <div className="grid gap-0 sm:grid-cols-[132px_1fr]">
+                  <div className="relative h-40 sm:h-full">
+                    <img src={coach.image} alt={coach.name} className="h-full w-full object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent sm:bg-gradient-to-r sm:from-transparent sm:via-transparent sm:to-black/10" />
                   </div>
-                )}
-                <p className="mt-3 leading-7 text-white/70">{coach.bio}</p>
+                  <div className="p-5 sm:p-6">
+                    <div className="text-[11px] uppercase tracking-[0.22em] text-[#c9a227]">{coach.role}</div>
+                    <div className="mt-2 text-2xl font-bold text-white">{coach.name}</div>
+                    <p className="mt-3 leading-7 text-white/68">{coach.bio}</p>
+                  </div>
+                </div>
               </div>
             ))}
 
-            <div className="rounded-[1.5rem] border border-[#c9a227]/20 bg-black/30 p-6">
-              <div className="text-lg font-semibold">Coaching Philosophy</div>
-              <p className="mt-3 leading-7 text-white/65">
+            <div className="rounded-[1.75rem] border border-[#c9a227]/20 bg-black/30 p-6">
+              <div className="text-sm uppercase tracking-[0.24em] text-[#c9a227]">Coaching Philosophy</div>
+              <p className="mt-4 leading-7 text-white/65">
                 Our staff is committed to developing complete student-athletes through accountability, toughness, and daily improvement. We emphasize team-first mentality and pride in representing Judge Memorial.
               </p>
             </div>
@@ -592,7 +631,7 @@ export default function BasketballProgramWebsite() {
       <footer className="border-t border-[#c9a227]/20 px-4 py-8 text-center text-sm text-white/45 sm:px-6">
         <div className="mb-4 flex justify-center">
           <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-[1.25rem] border-2 border-[#c9a227] bg-[#7a0c0c]">
-            <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+            <img src="/jm-logo.png" alt="JM Basketball logo" className="h-full w-full object-cover" />
           </div>
         </div>
         © 2026 Judge Memorial Catholic HS Basketball. All rights reserved.
