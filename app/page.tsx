@@ -5,7 +5,7 @@ export default function BasketballProgramWebsite() {
     "Compete with toughness and pride",
     "Develop leaders",
     "Build discipline daily",
-    "Represent Judge Memorial with pride",
+    "Represent Judge with pride",
   ];
 
   const championships = [1980, 2006, 2008, 2024];
@@ -58,21 +58,27 @@ export default function BasketballProgramWebsite() {
   ];
 
   const rosterPlayers = [
-  { id: "kalou-ruot", number: 5, name: "Kalou Ruot", details: "F • 6'8\" • Class of 2028" },
-];
+    {
+      id: "kalou-ruot",
+      number: 5,
+      name: "Kalou Ruot",
+      details: "F • 6'8\" • Class of 2028",
+      image: "/kalou.jpg",
+    },
+  ];
 
-const alumni = [
-  { id: "aymen-ismail", name: "Aymen Ismail", school: "CSU Pueblo", year: "Class of 2026 • Committed", badge: "CSUP" },
-  { id: "massaer-mbodj", name: "Massaer Mbodj", school: "Western Wyoming CC", year: "Class of 2026 • Committed", badge: "WW" },
-  { id: "aj-peek", name: "AJ Peek", school: "United States Merchant Marine Academy", year: "Class of 2026 • Committed", badge: "USMMA" },
-  { id: "jj-apathjang", name: "JJ Apathjang", school: "Northern Kentucky University", year: "Class of 2025 • Committed", badge: "NKU" },
-  { id: "deng-deng", name: "Deng Deng", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
-  { id: "majak-deng", name: "Majak Deng", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
-  { id: "longar-alor", name: "Longar Alor", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
-  { id: "aaydan-saucedo", name: "Aaydan Saucedo", school: "University of Puget Sound", year: "Class of 2024 • Committed", badge: "UPS" },
-  { id: "manase-mangala", name: "Manase Mangala", school: "Wenatchee Valley College", year: "Class of 2023 • Committed", badge: "WVC" },
-  { id: "dom-burns", name: "Dom Burns", school: "Carroll University (WI)", year: "Class of 2021 • Committed", badge: "CU" },
-];
+  const alumni = [
+    { id: "aymen-ismail", name: "Aymen Ismail", school: "CSU Pueblo", year: "Class of 2026 • Committed", badge: "CSUP" },
+    { id: "massaer-mbodj", name: "Massaer Mbodj", school: "Western Wyoming CC", year: "Class of 2026 • Committed", badge: "WW" },
+    { id: "aj-peek", name: "AJ Peek", school: "United States Merchant Marine Academy", year: "Class of 2026 • Committed", badge: "USMMA" },
+    { id: "jj-apathjang", name: "JJ Apathjang", school: "Northern Kentucky University", year: "Class of 2025 • Committed", badge: "NKU" },
+    { id: "deng-deng", name: "Deng Deng", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
+    { id: "majak-deng", name: "Majak Deng", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
+    { id: "longar-alor", name: "Longar Alor", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
+    { id: "aaydan-saucedo", name: "Aaydan Saucedo", school: "University of Puget Sound", year: "Class of 2024 • Committed", badge: "UPS" },
+    { id: "manase-mangala", name: "Manase Mangala", school: "Wenatchee Valley College", year: "Class of 2023 • Committed", badge: "WVC" },
+    { id: "dom-burns", name: "Dom Burns", school: "Carroll University (WI)", year: "Class of 2021 • Committed", badge: "CU" },
+  ];
 
   const newsItems = [
     {
@@ -94,6 +100,7 @@ const alumni = [
       name: "Sanjin Kolovrat",
       initials: "SK",
       role: "Head Coach",
+      image: "/sanjin.jpg",
       bio: "Leading Judge Memorial Catholic HS basketball with a focus on player development, discipline, and building a championship culture on and off the court.",
       socialLabel: "X",
       socialHandle: "@CoachSanjin",
@@ -103,12 +110,14 @@ const alumni = [
       name: "Jake Bero-Van Wagoner",
       initials: "JB",
       role: "Assistant Coach",
+      image: "/jake.jpg",
       bio: "Head frosh/soph coach, assistant varsity coach. Director of basketball operations.",
     },
     {
       name: "Jesus Martinez",
       initials: "JM",
       role: "Assistant Coach",
+      image: "/jesus.jpg",
       bio: "Head JV coach, lead assistant varsity coach. Director of youth development with Utah Branded.",
     },
   ];
@@ -128,8 +137,8 @@ const alumni = [
       <header className="sticky top-0 z-50 border-b border-[#c9a227]/20 bg-[#2a0808]/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border-2 border-[#c9a227] bg-[#7a0c0c] text-xl font-black text-[#c9a227]">
-              JM
+            <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl border-2 border-[#c9a227] bg-[#7a0c0c]">
+              <img src="/jm-logo.png" alt="JM Basketball logo" className="h-full w-full object-cover" />
             </div>
             <div>
               <div className="text-[10px] uppercase tracking-[0.3em] text-[#c9a227] sm:text-xs">Judge Memorial Catholic HS</div>
@@ -164,9 +173,10 @@ const alumni = [
       </header>
 
       <section id="home" className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-[#2a0808] to-[#4a0d0d]" />
-        <div className="absolute inset-0 bg-black/45" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-[#3a0a0a]/70 to-black/55" />
+        <img src="/gym.jpg" alt="Judge Memorial gym" className="absolute inset-0 h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-[#2a0808]/60 to-[#4a0d0d]/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-[#3a0a0a]/65 to-black/55" />
 
         <div className="relative mx-auto grid min-h-[78vh] max-w-7xl gap-10 px-4 py-16 sm:px-6 sm:py-20 md:grid-cols-2 md:py-28">
           <div className="flex flex-col justify-center">
@@ -175,8 +185,8 @@ const alumni = [
             </div>
 
             <div className="mb-6 flex items-center gap-4">
-              <div className="flex h-20 w-20 items-center justify-center rounded-[1.5rem] border-2 border-[#c9a227] bg-[#7a0c0c]/85 text-4xl font-black text-[#c9a227] md:h-24 md:w-24 md:text-5xl">
-                JM
+              <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-[1.5rem] border-2 border-[#c9a227] bg-[#7a0c0c]/85 md:h-24 md:w-24">
+                <img src="/jm-logo.png" alt="JM Basketball logo" className="h-full w-full object-cover" />
               </div>
               <div>
                 <div className="text-sm uppercase tracking-[0.35em] text-[#f3d36b]">Judge Memorial</div>
@@ -384,6 +394,10 @@ const alumni = [
           <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Meet the Team</h2>
         </div>
 
+        <div className="mb-6 text-center text-sm uppercase tracking-[0.25em] text-[#c9a227]">
+          26–27 roster releasing soon
+        </div>
+
         <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
           {rosterPlayers.map((player) => {
             const initials = player.name
@@ -394,9 +408,14 @@ const alumni = [
 
             return (
               <div key={player.id} className="group rounded-[2rem] border border-[#c9a227]/20 bg-[#7a0c0c]/20 p-6 transition-all duration-300 hover:scale-[1.03] hover:border-[#c9a227] hover:shadow-2xl hover:shadow-[#c9a227]/20 active:scale-[0.99]">
-                <div className="mb-4 flex h-48 items-center justify-center rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-black/30 to-[#7a0c0c]/30">
-                  <div className="flex h-20 w-20 items-center justify-center rounded-3xl border-2 border-[#c9a227]/40 bg-black/30 text-2xl font-black text-[#f3d36b]">
-                    {initials}
+                <div className="relative mb-4 overflow-hidden rounded-[1.5rem] border border-white/10">
+                  <img src={player.image} alt={player.name} className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
+                  <div className="absolute right-3 top-3 flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-[#c9a227]/40 bg-black/30 backdrop-blur-sm">
+                    <img src="/jm-logo.png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+                  </div>
+                  <div className="absolute bottom-3 left-3 rounded-full border border-[#c9a227]/30 bg-black/45 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#f3d36b] backdrop-blur-sm">
+                    Featured Prospect
                   </div>
                 </div>
 
@@ -432,8 +451,12 @@ const alumni = [
             <div className="grid gap-4">
               {coaches.map((coach) => (
                 <div key={coach.name} className="flex items-center gap-4 rounded-[1.5rem] border border-white/10 bg-black/25 p-4">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-[#c9a227]/30 bg-[#7a0c0c] text-lg font-black text-[#f3d36b]">
-                    {coach.initials}
+                  <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl border border-[#c9a227]/30 bg-[#7a0c0c]">
+                    {coach.image ? (
+                      <img src={coach.image} alt={coach.name} className="h-full w-full object-cover" />
+                    ) : (
+                      <span className="text-lg font-black text-[#f3d36b]">{coach.initials}</span>
+                    )}
                   </div>
                   <div>
                     <div className="text-lg font-semibold text-white">{coach.name}</div>
@@ -568,8 +591,8 @@ const alumni = [
 
       <footer className="border-t border-[#c9a227]/20 px-4 py-8 text-center text-sm text-white/45 sm:px-6">
         <div className="mb-4 flex justify-center">
-          <div className="flex h-16 w-16 items-center justify-center rounded-[1.25rem] border-2 border-[#c9a227] bg-[#7a0c0c] text-3xl font-black text-[#c9a227]">
-            JM
+          <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-[1.25rem] border-2 border-[#c9a227] bg-[#7a0c0c]">
+            <img src="/jm-logo.png" alt="JM Basketball logo" className="h-full w-full object-cover" />
           </div>
         </div>
         © 2026 Judge Memorial Catholic HS Basketball. All rights reserved.
