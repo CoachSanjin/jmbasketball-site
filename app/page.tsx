@@ -138,7 +138,7 @@ export default function BasketballProgramWebsite() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl border-2 border-[#c9a227] bg-[#7a0c0c]">
-              <img src="/JM_Primary(1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+              <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
             </div>
             <div>
               <div className="text-[10px] uppercase tracking-[0.3em] text-[#c9a227] sm:text-xs">Judge Memorial Catholic HS</div>
@@ -186,7 +186,7 @@ export default function BasketballProgramWebsite() {
 
             <div className="mb-6 flex items-center gap-4">
               <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-[1.5rem] border-2 border-[#c9a227] bg-[#7a0c0c]/85 md:h-24 md:w-24">
-                <img src="/jm-logo.png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+                <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
               </div>
               <div>
                 <div className="text-sm uppercase tracking-[0.35em] text-[#f3d36b]">Judge Memorial</div>
@@ -412,7 +412,7 @@ export default function BasketballProgramWebsite() {
                   <img src={player.image} alt={player.name} className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
                   <div className="absolute right-3 top-3 flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-[#c9a227]/40 bg-black/30 backdrop-blur-sm">
-                    <img src="/jm-logo.png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+                    <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
                   </div>
                   <div className="absolute bottom-3 left-3 rounded-full border border-[#c9a227]/30 bg-black/45 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#f3d36b] backdrop-blur-sm">
                     Featured Prospect
@@ -592,7 +592,7 @@ export default function BasketballProgramWebsite() {
       <footer className="border-t border-[#c9a227]/20 px-4 py-8 text-center text-sm text-white/45 sm:px-6">
         <div className="mb-4 flex justify-center">
           <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-[1.25rem] border-2 border-[#c9a227] bg-[#7a0c0c]">
-            <img src="/jm-logo.png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+            <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
           </div>
         </div>
         © 2026 Judge Memorial Catholic HS Basketball. All rights reserved.
