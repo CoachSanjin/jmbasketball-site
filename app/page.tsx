@@ -138,7 +138,7 @@ export default function BasketballProgramWebsite() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl border-2 border-[#c9a227] bg-[#7a0c0c]">
-              <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+              <img src="/JM_Primary(1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
             </div>
             <div>
               <div className="text-[10px] uppercase tracking-[0.3em] text-[#c9a227] sm:text-xs">Judge Memorial Catholic HS</div>
