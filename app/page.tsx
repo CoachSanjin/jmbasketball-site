@@ -5,7 +5,7 @@ export default function BasketballProgramWebsite() {
     "Compete with toughness and pride",
     "Develop leaders",
     "Build discipline daily",
-    "Represent Judge with pride",
+    "Represent Judge Memorial with pride",
   ];
 
   const championships = [1980, 2006, 2008, 2024];
@@ -57,15 +57,7 @@ export default function BasketballProgramWebsite() {
     },
   ];
 
-  const rosterPlayers = [
-    {
-      id: "kalou-ruot",
-      number: 5,
-      name: "Kalou Ruot",
-      details: "F • 6'8\" • Class of 2028",
-      image: "/kalou-ruot.jpg",
-    },
-  ];
+  const rosterPlayers = [];
 
   const alumni = [
     { id: "aymen-ismail", name: "Aymen Ismail", school: "CSU Pueblo", year: "Class of 2026 • Committed", badge: "CSUP" },
@@ -83,15 +75,11 @@ export default function BasketballProgramWebsite() {
   const newsItems = [
     {
       title: "Summer Camp Registration Open",
-      text: "Join our youth basketball camp for skill development, competition, and fun led by our coaching staff and players.",
-    },
-    {
-      title: "Offseason Training Schedule Released",
-      text: "View updated training times, open gym sessions, and strength program details for the upcoming offseason.",
+      text: "Register now for our Summer Skills Camp: https://www.judgememorial.org/summer-classes-camps",
     },
     {
       title: "Follow the Program This Season",
-      text: "Stay connected for schedules, scores, highlights, and team announcements all season long.",
+      text: "Stay connected for schedules, scores, highlights, and team announcements all season long. Follow us on Instagram @judgebasketball",
     },
   ];
 
@@ -119,6 +107,13 @@ export default function BasketballProgramWebsite() {
       role: "Assistant Coach",
       image: "/jesus.jpg",
       bio: "Head JV coach, lead assistant varsity coach. Director of youth development with Utah Branded.",
+    },
+    {
+      name: "Arual Deng",
+      initials: "AD",
+      role: "Academic Advisor",
+      image: "",
+      bio: "Supporting student-athlete academic success and accountability within the basketball program.",
     },
   ];
 
@@ -173,71 +168,83 @@ export default function BasketballProgramWebsite() {
       </header>
 
       <section id="home" className="relative overflow-hidden">
-        <img src="/gym.jpg" alt="Judge Memorial gym" className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-[#2a0808]/60 to-[#4a0d0d]/80" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-[#3a0a0a]/65 to-black/55" />
+        <img src="/gym.jpg" alt="Judge Memorial gym" className="absolute inset-0 h-full w-full scale-[1.04] object-cover" />
+        <div className="absolute inset-0 bg-black/25" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,162,39,0.18),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(181,18,43,0.16),transparent_24%)]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-[#2a0808]/25 to-[#4a0d0d]/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-[#3a0a0a]/25 to-black/35" />
+        <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:72px_72px]" />
 
-        <div className="relative mx-auto grid min-h-[78vh] max-w-7xl gap-10 px-4 py-16 sm:px-6 sm:py-20 md:grid-cols-2 md:py-28">
+        <div className="relative mx-auto grid min-h-[82vh] max-w-7xl gap-12 px-4 py-16 sm:px-6 sm:py-20 md:grid-cols-[1.08fr_0.92fr] md:py-28">
           <div className="flex flex-col justify-center">
-            <div className="mb-4 inline-flex w-fit rounded-full border border-[#c9a227]/30 bg-black/35 px-4 py-2 text-xs uppercase tracking-[0.25em] text-[#f3d36b]">
+            <div className="mb-5 inline-flex w-fit items-center gap-3 rounded-full border border-[#c9a227]/35 bg-black/45 px-4 py-2 text-xs uppercase tracking-[0.25em] text-[#f3d36b] backdrop-blur-sm">
+              <span className="h-2 w-2 rounded-full bg-[#f3d36b]" />
               Tradition • Toughness • Brotherhood
             </div>
 
-            <div className="mb-6 flex items-center gap-4">
-              <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-[1.5rem] border-2 border-[#c9a227] bg-[#7a0c0c]/85 md:h-24 md:w-24">
+            <div className="mb-7 flex items-center gap-4">
+              <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-[1.5rem] border-2 border-[#c9a227] bg-[#7a0c0c]/85 shadow-2xl shadow-black/40 md:h-24 md:w-24">
                 <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
               </div>
               <div>
                 <div className="text-sm uppercase tracking-[0.35em] text-[#f3d36b]">Judge Memorial</div>
-                <div className="text-xl uppercase tracking-[0.45em] text-white/80">Basketball</div>
+                <div className="text-xl uppercase tracking-[0.45em] text-white/85">Basketball</div>
               </div>
             </div>
 
-            <h1 className="max-w-2xl text-4xl font-black leading-none tracking-tight sm:text-5xl md:text-7xl">
-              Built on tradition. Driven by standard.
+            <h1 className="max-w-3xl text-5xl font-black leading-[0.94] tracking-tight sm:text-6xl md:text-7xl xl:text-[5.35rem]">
+              Built on tradition.<br />
+              Driven by standard.
             </h1>
 
-            <p className="mt-6 max-w-xl text-base leading-7 text-white/80 sm:text-lg sm:leading-8">
+            <p className="mt-6 max-w-2xl text-base leading-7 text-white/82 sm:text-lg sm:leading-8">
               Welcome to Judge Memorial Catholic HS basketball — a program built on discipline, development, competition, and pride in representing our school every day.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-3 text-sm uppercase tracking-[0.22em] text-white/70">
-              <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">Salt Lake City</span>
-              <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">2026–2027 Season</span>
+            <div className="mt-8 flex flex-wrap gap-3 text-sm uppercase tracking-[0.22em] text-white/75">
+              <span className="rounded-full border border-white/10 bg-black/35 px-4 py-2 backdrop-blur-sm">Salt Lake City</span>
+              <span className="rounded-full border border-white/10 bg-black/35 px-4 py-2 backdrop-blur-sm">2026–2027 Season</span>
+              <span className="rounded-full border border-white/10 bg-black/35 px-4 py-2 backdrop-blur-sm">We &gt; Me</span>
             </div>
 
             <div className="mt-8 grid gap-3 sm:flex sm:flex-row sm:flex-wrap sm:gap-4">
-              <a href="#schedule" className="rounded-2xl bg-[#c9a227] px-6 py-3 text-center font-semibold text-[#3a0a0a] transition hover:scale-[1.02] active:scale-[0.99]">
+              <a href="#schedule" className="rounded-2xl bg-[#c9a227] px-6 py-3 text-center font-semibold text-[#3a0a0a] shadow-lg shadow-black/25 transition hover:scale-[1.02] active:scale-[0.99]">
                 View Schedule
               </a>
-              <a href="#coaches" className="rounded-2xl border border-[#c9a227]/40 px-6 py-3 text-center font-semibold text-white transition hover:bg-[#c9a227]/10 active:scale-[0.99]">
+              <a href="#coaches" className="rounded-2xl border border-[#c9a227]/40 bg-black/20 px-6 py-3 text-center font-semibold text-white backdrop-blur-sm transition hover:bg-[#c9a227]/10 active:scale-[0.99]">
                 Meet the Staff
               </a>
             </div>
+
+            <div className="mt-10 hidden items-center gap-3 text-xs uppercase tracking-[0.24em] text-white/55 md:flex">
+              <span className="h-px w-14 bg-[#c9a227]/40" />
+              Program Culture. Daily Development. Competitive Edge.
+            </div>
           </div>
 
-          <div className="grid content-end gap-4 md:pl-10">
-            <div className="rounded-[2rem] border border-[#c9a227]/25 bg-black/35 p-6 backdrop-blur sm:p-8">
-              <div className="mb-4 text-sm uppercase tracking-[0.3em] text-[#f3d36b]/80">Program Snapshot</div>
-              <div className="grid grid-cols-2 gap-4">
+          <div className="grid content-end gap-5 md:pl-6 xl:pl-10">
+            <div className="overflow-hidden rounded-[2rem] border border-[#c9a227]/25 bg-black/30 shadow-2xl shadow-black/30 backdrop-blur-md">
+              <div className="border-b border-white/10 px-6 py-4">
+                <div className="text-sm uppercase tracking-[0.3em] text-[#f3d36b]/90">Program Snapshot</div>
+              </div>
+              <div className="grid grid-cols-2 gap-4 p-6 sm:p-7">
                 {[
                   { value: "4", label: "Levels" },
                   { value: "100+", label: "Athletes Impacted" },
                   { value: "12", label: "Months of Development" },
                   { value: "1", label: "Program Standard" },
                 ].map((item) => (
-                  <div key={item.label} className="rounded-2xl border border-[#c9a227]/10 bg-black/35 p-5">
-                    <div className="text-3xl font-bold">{item.value}</div>
+                  <div key={item.label} className="rounded-2xl border border-white/10 bg-black/35 p-5 backdrop-blur-sm transition hover:border-[#c9a227]/25">
+                    <div className="text-3xl font-black text-white">{item.value}</div>
                     <div className="mt-1 text-sm text-white/60">{item.label}</div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-[#c9a227]/20 bg-gradient-to-br from-black/45 to-[#7a0c0c]/30 p-6 backdrop-blur sm:p-8">
-              <div className="text-sm uppercase tracking-[0.3em] text-[#f3d36b]/80">Our Mission</div>
-              <p className="mt-4 text-lg leading-7 text-white/90 sm:text-xl sm:leading-8">
+            <div className="rounded-[2rem] border border-[#c9a227]/20 bg-gradient-to-br from-black/55 to-[#7a0c0c]/30 p-6 shadow-2xl shadow-black/25 backdrop-blur-md sm:p-8">
+              <div className="text-sm uppercase tracking-[0.3em] text-[#f3d36b]/85">Our Mission</div>
+              <p className="mt-4 text-lg leading-7 text-white/92 sm:text-xl sm:leading-8">
                 We develop student-athletes into confident competitors, disciplined teammates, and high-character young men prepared for success beyond basketball.
               </p>
             </div>
@@ -395,48 +402,10 @@ export default function BasketballProgramWebsite() {
         </div>
 
         <div className="mb-6 text-center text-sm uppercase tracking-[0.25em] text-[#c9a227]">
-          26–27 roster releasing soon
+          26–27 ROSTER RELEASING AFTER TRYOUTS IN NOVEMBER
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-          {rosterPlayers.map((player) => {
-            const initials = player.name
-              .split(" ")
-              .map((part) => part[0])
-              .slice(0, 2)
-              .join("");
-
-            return (
-              <div key={player.id} className="group rounded-[2rem] border border-[#c9a227]/20 bg-[#7a0c0c]/20 p-6 transition-all duration-300 hover:scale-[1.03] hover:border-[#c9a227] hover:shadow-2xl hover:shadow-[#c9a227]/20 active:scale-[0.99]">
-                <div className="relative mb-4 overflow-hidden rounded-[1.5rem] border border-white/10">
-                  <img src={player.image} alt={player.name} className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
-                  <div className="absolute right-3 top-3 flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-[#c9a227]/40 bg-black/30 backdrop-blur-sm">
-                    <img src="/jm-logo.png" alt="JM Basketball logo" className="h-full w-full object-cover" />
-                  </div>
-                  <div className="absolute bottom-3 left-3 rounded-full border border-[#c9a227]/30 bg-black/45 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#f3d36b] backdrop-blur-sm">
-                    Featured Prospect
-                  </div>
-                </div>
-
-                <div className="text-xs uppercase tracking-[0.25em] text-white/45 group-hover:text-[#c9a227]">#{player.number}</div>
-                <div className="mt-2 text-xl font-semibold transition group-hover:text-[#f3d36b]">{player.name}</div>
-                <div className="mt-1 text-white/60">{player.details}</div>
-
-                <div className="mt-4">
-                  <div className="text-xs uppercase tracking-[0.25em] text-[#c9a227]">Current Offers</div>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    {offers.map((offer, index) => (
-                      <span key={`${player.id}-${index}`} className="rounded-full border border-[#c9a227]/30 px-3 py-1 text-xs">
-                        {offer}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        
       </section>
 
       <section id="coaches" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
@@ -450,17 +419,28 @@ export default function BasketballProgramWebsite() {
             <div className="mb-6 text-sm uppercase tracking-[0.3em] text-[#c9a227]">Staff Lineup</div>
             <div className="grid gap-4">
               {coaches.map((coach) => (
-                <div key={coach.name} className="flex items-center gap-4 rounded-[1.5rem] border border-white/10 bg-black/25 p-4">
-                  <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl border border-[#c9a227]/30 bg-[#7a0c0c]">
-                    {coach.image ? (
-                      <img src={coach.image} alt={coach.name} className="h-full w-full object-cover" />
-                    ) : (
-                      <span className="text-lg font-black text-[#f3d36b]">{coach.initials}</span>
-                    )}
+                <div key={coach.name} className="flex items-center justify-between gap-4 rounded-[1.5rem] border border-white/10 bg-black/25 p-4">
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl border border-[#c9a227]/30 bg-[#7a0c0c]">
+                      {coach.image ? (
+                        <img src={coach.image} alt={coach.name} className="h-full w-full object-cover" />
+                      ) : (
+                        <span className="text-lg font-black text-[#f3d36b]">{coach.initials}</span>
+                      )}
+                    </div>
+                    <div>
+                      <div className="text-lg font-semibold text-white">{coach.name}</div>
+                      <div className="text-sm uppercase tracking-[0.18em] text-white/55">{coach.role}</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-lg font-semibold text-white">{coach.name}</div>
-                    <div className="text-sm uppercase tracking-[0.18em] text-white/55">{coach.role}</div>
+
+                  <div className="text-sm">
+                    {coach.name === "Sanjin Kolovrat" && (
+                      <a href="https://twitter.com/CoachSanjin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#f3d36b] hover:underline">
+                        <span className="text-base">𝕏</span>
+                        <span>@CoachSanjin</span>
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}
@@ -471,12 +451,7 @@ export default function BasketballProgramWebsite() {
             <div className="rounded-[1.5rem] border border-[#c9a227]/20 bg-[#7a0c0c]/20 p-6">
               <div className="text-sm uppercase tracking-[0.25em] text-white/50">Head Coach</div>
               <div className="mt-2 text-2xl font-bold">Sanjin Kolovrat</div>
-              <div className="mt-2 text-sm font-semibold flex items-center gap-2">
-                <img src="/x.avif" alt="X" className="h-4 w-4" />
-                <a href="https://twitter.com/CoachSanjin" target="_blank" rel="noopener noreferrer" className="text-[#f3d36b] hover:underline">
-                  @CoachSanjin
-                </a>
-              </div>
+              
               <p className="mt-3 leading-7 text-white/70">
                 Leading Judge Memorial Catholic HS basketball with a focus on player development, discipline, and building a championship culture on and off the court.
               </p>
@@ -511,16 +486,26 @@ export default function BasketballProgramWebsite() {
             <div className="text-sm uppercase tracking-[0.3em] text-white/50">Camps & Youth Development</div>
             <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Grow the game in our community</h2>
             <p className="mt-5 max-w-2xl leading-8 text-white/70">
-              Our youth camps create a fun, energetic environment for players to improve fundamentals, learn teamwork, and connect with our basketball program.
+              Led by Coach Sanjin, Coach Zeus, & Coach Jake, our youth camps create a fun, energetic environment for players to improve fundamentals, learn teamwork, and connect with our basketball program.
             </p>
           </div>
           <div className="rounded-[1.75rem] border border-[#c9a227]/10 bg-black/30 p-6">
             <div className="text-lg font-semibold">Featured Camp</div>
-            <div className="mt-4 text-2xl font-bold">Summer Skills Camp</div>
-            <div className="mt-3 text-white/65">Grades 3–8 • Morning Sessions • Judge Memorial Gym</div>
-            <button className="mt-6 rounded-2xl bg-[#c9a227] px-5 py-3 font-semibold text-[#3a0a0a] transition hover:scale-[1.02]">
+            <div className="mt-4 flex items-center gap-3 text-2xl font-bold">
+              Summer Skills Camp
+              <span className="rounded-full border border-[#c9a227]/40 bg-[#c9a227]/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#f3d36b]">
+                Limited Spots
+              </span>
+            </div>
+            <div className="mt-3 text-white/65">July 14–16, 2026 • Grades 3–8 • Judge Memorial Gym</div>
+            <a
+              href="https://www.judgememorial.org/summer-classes-camps"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-block rounded-2xl bg-[#c9a227] px-5 py-3 font-semibold text-[#3a0a0a] transition hover:scale-[1.02]"
+            >
               Register Now
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -563,7 +548,23 @@ export default function BasketballProgramWebsite() {
           {newsItems.map((item) => (
             <div key={item.title} className="rounded-[2rem] border border-[#c9a227]/20 bg-[#7a0c0c]/20 p-6">
               <div className="text-xl font-semibold">{item.title}</div>
-              <p className="mt-4 leading-7 text-white/65">{item.text}</p>
+              <p className="mt-4 leading-7 text-white/65">
+                {item.title === "Summer Camp Registration Open" ? (
+                  <>
+                    Register now for our Summer Skills Camp:{" "}
+                    <a href="https://www.judgememorial.org/summer-classes-camps" target="_blank" rel="noopener noreferrer" className="text-[#f3d36b] hover:underline">
+                      Register Here
+                    </a>
+                  </>
+                ) : (
+                  <>
+                    Stay connected for schedules, scores, highlights, and team announcements all season long. Follow us on Instagram{" "}
+                    <a href="https://instagram.com/judgebasketball" target="_blank" rel="noopener noreferrer" className="text-[#f3d36b] hover:underline">
+                      @judgebasketball
+                    </a>
+                  </>
+                )}
+              </p>
             </div>
           ))}
         </div>
