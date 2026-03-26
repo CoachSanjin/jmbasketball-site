@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 
 export default function BasketballProgramWebsite() {
@@ -622,7 +624,7 @@ export default function BasketballProgramWebsite() {
       <footer className="border-t border-[#c9a227]/20 px-4 py-8 text-center text-sm text-white/45 sm:px-6">
         <div className="mb-4 flex justify-center">
           <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-[1.25rem] border-2 border-[#c9a227] bg-[#7a0c0c]">
-            <img src="/jm-logo.png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+            <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
           </div>
         </div>
         © 2026 Judge Memorial Catholic HS Basketball. All rights reserved.
