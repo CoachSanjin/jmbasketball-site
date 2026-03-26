@@ -1,4 +1,17 @@
+import { useEffect, useState } from "react";
+
 export default function BasketballProgramWebsite() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const heroImageTransform = `translateY(${Math.min(scrollY * 0.18, 70)}px) scale(1.04)`;
+  const heroContentTransform = `translateY(${Math.min(scrollY * 0.06, 20)}px)`;
   const navItems = ["Home", "About", "Schedule", "Roster", "Coaches", "Alumni", "Camps", "News", "Contact"];
 
   const values = [
@@ -133,7 +146,7 @@ export default function BasketballProgramWebsite() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl border-2 border-[#c9a227] bg-[#7a0c0c]">
-              <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+              <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-[85%] w-[85%] object-contain" />
             </div>
             <div>
               <div className="text-[10px] uppercase tracking-[0.3em] text-[#c9a227] sm:text-xs">Judge Memorial Catholic HS</div>
@@ -168,22 +181,27 @@ export default function BasketballProgramWebsite() {
       </header>
 
       <section id="home" className="relative overflow-hidden">
-        <img src="/gym.jpg" alt="Judge Memorial gym" className="absolute inset-0 h-full w-full scale-[1.04] object-cover" />
+        <img
+          src="/gym.jpg"
+          alt="Judge Memorial gym"
+          className="absolute inset-0 h-full w-full object-cover will-change-transform"
+          style={{ transform: heroImageTransform }}
+        />
         <div className="absolute inset-0 bg-black/25" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,162,39,0.18),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(181,18,43,0.16),transparent_24%)]" />
         <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-[#2a0808]/25 to-[#4a0d0d]/55" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-[#3a0a0a]/25 to-black/35" />
         <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:72px_72px]" />
 
-        <div className="relative mx-auto grid min-h-[82vh] max-w-7xl gap-12 px-4 py-16 sm:px-6 sm:py-20 md:grid-cols-[1.08fr_0.92fr] md:py-28">
+        <div className="relative mx-auto grid min-h-[82vh] max-w-7xl gap-12 px-4 py-16 sm:px-6 sm:py-20 md:grid-cols-[1.08fr_0.92fr] md:py-28" style={{ transform: heroContentTransform }}>
           <div className="flex flex-col justify-center">
             <div className="mb-5 inline-flex w-fit items-center gap-3 rounded-full border border-[#c9a227]/35 bg-black/45 px-4 py-2 text-xs uppercase tracking-[0.25em] text-[#f3d36b] backdrop-blur-sm">
               <span className="h-2 w-2 rounded-full bg-[#f3d36b]" />
               Tradition • Toughness • Brotherhood
             </div>
 
-            <div className="mb-7 flex items-center gap-4">
-              <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-[1.5rem] border-2 border-[#c9a227] bg-[#7a0c0c]/85 shadow-2xl shadow-black/40 md:h-24 md:w-24">
+            <div className="mb-7 flex items-center gap-5">
+              <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-[1.5rem] border-2 border-[#c9a227] bg-[#7a0c0c]/85 shadow-[0_0_25px_rgba(201,162,39,0.35)] md:h-20 md:w-20">
                 <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
               </div>
               <div>
@@ -604,7 +622,7 @@ export default function BasketballProgramWebsite() {
       <footer className="border-t border-[#c9a227]/20 px-4 py-8 text-center text-sm text-white/45 sm:px-6">
         <div className="mb-4 flex justify-center">
           <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-[1.25rem] border-2 border-[#c9a227] bg-[#7a0c0c]">
-            <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+            <img src="/jm-logo.png" alt="JM Basketball logo" className="h-full w-full object-cover" />
           </div>
         </div>
         © 2026 Judge Memorial Catholic HS Basketball. All rights reserved.
