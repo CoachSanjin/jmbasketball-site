@@ -204,7 +204,7 @@ export default function BasketballProgramWebsite() {
 
             <div className="mb-7 flex items-center gap-5">
               <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-[1.5rem] border-2 border-[#c9a227] bg-[#7a0c0c]/85 shadow-[0_0_25px_rgba(201,162,39,0.35)] md:h-20 md:w-20">
-                <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+                <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-[80%] w-[80%] object-contain" />
               </div>
               <div>
                 <div className="text-sm uppercase tracking-[0.35em] text-[#f3d36b]">Judge Memorial</div>
@@ -624,7 +624,7 @@ export default function BasketballProgramWebsite() {
       <footer className="border-t border-[#c9a227]/20 px-4 py-8 text-center text-sm text-white/45 sm:px-6">
         <div className="mb-4 flex justify-center">
           <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-[1.25rem] border-2 border-[#c9a227] bg-[#7a0c0c]">
-            <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-full w-full object-cover" />
+            <img src="/JM_Primary (1).png" alt="JM Basketball logo" className="h-[80%] w-[80%] object-contain" />
           </div>
         </div>
         © 2026 Judge Memorial Catholic HS Basketball. All rights reserved.
