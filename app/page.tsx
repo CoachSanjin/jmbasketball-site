@@ -51,6 +51,9 @@ export default function BasketballProgramWebsite() {
         { date: "4", opponent: "West Field HS", location: "Home" },
         { date: "11", opponent: "Summit Academy HS", location: "Home" },
         { date: "15", opponent: "Murray HS", location: "Away" },
+        { date: "18", opponent: "Juan Diego HS", location: "Away" },
+        { date: "28", opponent: "Snow Canyon HS - Oly Autism Classic", location: "Neutral" },
+        { date: "30", opponent: "Springville HS - Oly Autism Classic", location: "Neutral" },
       ],
     },
     {
@@ -60,6 +63,9 @@ export default function BasketballProgramWebsite() {
         { date: "8", opponent: "Park City HS", location: "Home" },
         { date: "12", opponent: "Jordan HS", location: "Away" },
         { date: "15", opponent: "Cottonwood HS", location: "Away" },
+        { date: "20", opponent: "East HS", location: "Home" },
+        { date: "21", opponent: "Murray HS", location: "Home" },
+        { date: "26", opponent: "Juan Diego HS", location: "Home" },
       ],
     },
     {
@@ -69,6 +75,7 @@ export default function BasketballProgramWebsite() {
         { date: "4", opponent: "Jordan HS", location: "Home" },
         { date: "6", opponent: "Layton Christian", location: "Away" },
         { date: "9", opponent: "Cottonwood HS", location: "Home" },
+        { date: "12", opponent: "East HS", location: "Away" },
       ],
     },
   ];
