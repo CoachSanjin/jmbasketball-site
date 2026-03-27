@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 
 export default function BasketballProgramWebsite() {
   const [scrollY, setScrollY] = useState(0);
-
+  const [activeRosterPage, setActiveRosterPage] = useState<string | null>(null);
+  
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     handleScroll();
@@ -88,12 +89,66 @@ export default function BasketballProgramWebsite() {
   ];
 
   const previousRosters = [
-    { id: "roster-2025-26", season: "2025–26", label: "Next Up", description: "The next wave of Judge Memorial basketball that built on championship standards and prepared for another competitive season.", href: "#", image: "/roster-2026.jpg" },
-    { id: "roster-2024-25", season: "2024–25", label: "State Title Defense", description: "The roster that helped continue Judge Memorial’s championship standard.", href: "#", image: "/roster-2025.jpg" },
-    { id: "roster-2023-24", season: "2023–24", label: "State Champions", description: "The team that captured the 2024 state championship and set the standard for Judge Memorial basketball.", href: "#", image: "/roster-2024.jpg" },
-    { id: "roster-2022-23", season: "2022–23", label: "Building the Standard", description: "A key developmental year for the program.", href: "#", image: "/roster-2023.jpg" },
-    { id: "roster-2021-22", season: "2021–22", label: "Program Growth", description: "Continuing to build a competitive foundation.", href: "#", image: "/roster-2022.jpg" },
-    { id: "roster-2020-21", season: "2020–21", label: "Foundation Year", description: "Laying the groundwork for the program’s future success.", href: "#", image: "/roster-2021.jpg" },
+    {
+      id: "roster-2025-26",
+      season: "2025–26",
+      label: "Next Up",
+      description: "The next wave of Judge Memorial basketball that built on championship standards and prepared for another competitive season.",
+      href: "#",
+      image: "/roster-2026.jpg",
+      highlights: ["Next generation core", "Program culture builders", "Competitive depth across the roster"],
+      summary: "A season built around momentum, development, and carrying Judge Memorial standards forward.",
+    },
+    {
+      id: "roster-2024-25",
+      season: "2024–25",
+      label: "State Title Defense",
+      description: "The roster that helped continue Judge Memorial’s championship standard.",
+      href: "#",
+      image: "/roster-2025.jpg",
+      highlights: ["Championship mindset", "Experienced leadership", "High-level competition every night"],
+      summary: "A group defined by resilience, expectations, and the pressure of defending the standard.",
+    },
+    {
+      id: "roster-2023-24",
+      season: "2023–24",
+      label: "State Champions",
+      description: "The team that captured the 2024 state championship and set the standard for Judge Memorial basketball.",
+      href: "#",
+      image: "/roster-2024.jpg",
+      highlights: ["2024 state champions", "Program-defining run", "Legacy group"],
+      summary: "The championship team that delivered a title and elevated the program’s modern era.",
+    },
+    {
+      id: "roster-2022-23",
+      season: "2022–23",
+      label: "Building the Standard",
+      description: "A key developmental year for the program.",
+      href: "#",
+      image: "/roster-2023.jpg",
+      highlights: ["Culture growth", "Foundation pieces", "Competitive identity"],
+      summary: "A roster that pushed the program forward and helped shape the standard that followed.",
+    },
+    {
+      id: "roster-2021-22",
+      season: "2021–22",
+      label: "Program Growth",
+      description: "Continuing to build a competitive foundation.",
+      href: "#",
+      image: "/roster-2022.jpg",
+      highlights: ["Emerging leadership", "Developing confidence", "Program traction"],
+      summary: "A season centered on progress, cohesion, and growth across the program.",
+    },
+    {
+      id: "roster-2020-21",
+      season: "2020–21",
+      label: "Foundation Year",
+      description: "Laying the groundwork for the program’s future success.",
+      href: "#",
+      image: "/roster-2021.jpg",
+      highlights: ["Program foundation", "Early identity", "Long-term vision"],
+      summary: "A foundational roster that helped establish the direction and expectations of Judge Memorial basketball.",
+    },
   ];
 
   const newsItems = [
@@ -578,27 +633,34 @@ export default function BasketballProgramWebsite() {
 
         <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
           {previousRosters.map((roster) => (
-            <a key={roster.id} href={roster.href} className="group overflow-hidden rounded-[2rem] border border-[#c9a227]/20 bg-[#7a0c0c]/20 transition hover:border-[#c9a227]/40 hover:shadow-xl">
-              <div className="relative h-40 w-full overflow-hidden">
-                <img src={roster.image} alt={roster.season} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-black/40" />
-                <div className="absolute top-3 left-3 rounded-full bg-black/60 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#f3d36b]">
+            <div key={roster.id} className="group rounded-[2rem] border border-[#c9a227]/20 bg-[#7a0c0c]/20 p-6 transition-all duration-300 hover:border-[#c9a227]/40 hover:shadow-xl">
+              <div className="flex items-center justify-between gap-3">
+                <div className="rounded-full bg-black/60 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#f3d36b]">
                   {roster.season}
                 </div>
                 {roster.season === "2023–24" && (
-                  <div className="absolute top-3 right-3 rounded-full bg-[#c9a227] px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-[#3a0a0a] shadow-lg">
+                  <div className="rounded-full bg-[#c9a227] px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-[#3a0a0a] shadow-lg">
                     🏆 Champions
                   </div>
                 )}
               </div>
-              <div className="p-5">
-                <div className="text-xl font-bold text-white">{roster.label}</div>
-                <p className="mt-2 text-sm text-white/65">{roster.description}</p>
-                <div className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-[#f3d36b] group-hover:underline">
+
+              <div className="mt-4 text-xl font-bold text-white">{roster.label}</div>
+              <p className="mt-2 text-sm leading-7 text-white/65">{roster.description}</p>
+
+              <button
+                type="button"
+                onClick={() => setActiveRosterPage(roster.id)}
+                className="mt-5 flex w-full items-center justify-between gap-3 rounded-xl border border-white/10 bg-black/30 p-3 text-left transition hover:border-[#c9a227]/40"
+              >
+                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#f3d36b]">
                   View Roster →
                 </div>
-              </div>
-            </a>
+                <div className="h-12 w-16 overflow-hidden rounded-md border border-white/10">
+                  <img src={roster.image} alt={roster.season} className="h-full w-full object-cover" />
+                </div>
+              </button>
+            </div>
           ))}
         </div>
       </section>
@@ -665,6 +727,35 @@ export default function BasketballProgramWebsite() {
           </div>
         </div>
       </section>
+
+      {activeRosterPage && (() => {
+        const roster = previousRosters.find((item) => item.id === activeRosterPage);
+        if (!roster) return null;
+
+        return (
+          <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/85 p-4 backdrop-blur-sm">
+            <div className="relative max-h-[92vh] w-full max-w-5xl overflow-hidden rounded-[2rem] border border-[#c9a227]/25 bg-[#120606] shadow-2xl shadow-black/40">
+              <div className="flex items-center justify-between border-b border-white/10 px-5 py-4 sm:px-7">
+                <div>
+                  <div className="text-xs uppercase tracking-[0.22em] text-[#c9a227]">Previous Roster</div>
+                  <div className="mt-1 text-2xl font-bold text-white">{roster.season} • {roster.label}</div>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setActiveRosterPage(null)}
+                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/75 transition hover:border-[#c9a227]/40 hover:text-white"
+                >
+                  Close
+                </button>
+              </div>
+
+              <div className="max-h-[calc(92vh-88px)] overflow-auto p-4 sm:p-6">
+                <img src={roster.image} alt={`${roster.season} roster`} className="w-full rounded-[1.5rem] border border-white/10 object-contain" />
+              </div>
+            </div>
+          </div>
+        );
+      })()}
 
       <footer className="border-t border-[#c9a227]/20 px-4 py-8 text-center text-sm text-white/45 sm:px-6">
         <div className="mb-4 flex justify-center">
