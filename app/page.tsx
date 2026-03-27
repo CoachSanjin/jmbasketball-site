@@ -558,12 +558,12 @@ export default function BasketballProgramWebsite() {
         <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
           {alumni.map((player) => (
             <div key={player.id} className="group overflow-hidden rounded-[2rem] border border-[#c9a227]/30 bg-gradient-to-br from-[#7a0c0c]/40 via-black/50 to-[#7a0c0c]/40 p-6 transition-all duration-300 hover:scale-[1.04] hover:border-[#f3d36b] hover:shadow-2xl hover:shadow-[#c9a227]/20">
-              <div className="mb-4 flex justify-center">
-                <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-xl border border-[#c9a227]/40 bg-black/40">
+              <div className="mb-5 flex justify-center">
+                <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl border border-[#c9a227]/50 bg-black/50 shadow-lg shadow-[#c9a227]/10">
                   {player.logo ? (
-                    <img src={player.logo} alt={player.school} className="h-[70%] w-[70%] object-contain" />
+                    <img src={player.logo} alt={player.school} className="h-[75%] w-[75%] object-contain" />
                   ) : (
-                    <span className="text-sm font-black text-[#f3d36b]">{player.badge}</span>
+                    <span className="text-base font-black text-[#f3d36b]">{player.badge}</span>
                   )}
                 </div>
               </div>
