@@ -74,16 +74,16 @@ export default function BasketballProgramWebsite() {
   const rosterPlayers = [];
 
   const alumni = [
-    { id: "aymen-ismail", name: "Aymen Ismail", school: "CSU Pueblo", year: "Class of 2026 • Committed", badge: "CSUP" },
-    { id: "massaer-mbodj", name: "Massaer Mbodj", school: "Western Wyoming CC", year: "Class of 2026 • Committed", badge: "WW" },
-    { id: "aj-peek", name: "AJ Peek", school: "United States Merchant Marine Academy", year: "Class of 2026 • Committed", badge: "USMMA" },
-    { id: "jj-apathjang", name: "JJ Apathjang", school: "Northern Kentucky University", year: "Class of 2025 • Committed", badge: "NKU" },
-    { id: "deng-deng", name: "Deng Deng", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
-    { id: "majak-deng", name: "Majak Deng", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
-    { id: "longar-alor", name: "Longar Alor", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC" },
-    { id: "aaydan-saucedo", name: "Aaydan Saucedo", school: "University of Puget Sound", year: "Class of 2024 • Committed", badge: "UPS" },
-    { id: "manase-mangala", name: "Manase Mangala", school: "Wenatchee Valley College", year: "Class of 2023 • Committed", badge: "WVC" },
-    { id: "dom-burns", name: "Dom Burns", school: "Carroll University (WI)", year: "Class of 2021 • Committed", badge: "CU" },
+    { id: "aymen-ismail", name: "Aymen Ismail", school: "CSU Pueblo", year: "Class of 2026 • Committed", badge: "CSUP", logo: "/csup.png" },
+    { id: "massaer-mbodj", name: "Massaer Mbodj", school: "Western Wyoming CC", year: "Class of 2026 • Committed", badge: "WW", logo: "/wwcc.png" },
+    { id: "aj-peek", name: "AJ Peek", school: "United States Merchant Marine Academy", year: "Class of 2026 • Committed", badge: "USMMA", logo: "/usmma.png" },
+    { id: "jj-apathjang", name: "JJ Apathjang", school: "Northern Kentucky University", year: "Class of 2025 • Committed", badge: "NKU", logo: "/nku.png" },
+    { id: "deng-deng", name: "Deng Deng", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC", logo: "/cac.png" },
+    { id: "majak-deng", name: "Majak Deng", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC", logo: "/cac.png" },
+    { id: "longar-alor", name: "Longar Alor", school: "Central Arizona College", year: "Class of 2025 • Committed", badge: "CAC", logo: "/cac.png" },
+    { id: "aaydan-saucedo", name: "Aaydan Saucedo", school: "University of Puget Sound", year: "Class of 2024 • Committed", badge: "UPS", logo: "/ups.png" },
+    { id: "manase-mangala", name: "Manase Mangala", school: "Wenatchee Valley College", year: "Class of 2023 • Committed", badge: "WVC", logo: "/wvc.png" },
+    { id: "dom-burns", name: "Dom Burns", school: "Carroll University (WI)", year: "Class of 2021 • Committed", badge: "CU", logo: "/carroll.png" },
   ];
 
   const previousRosters = [
@@ -559,8 +559,12 @@ export default function BasketballProgramWebsite() {
           {alumni.map((player) => (
             <div key={player.id} className="group overflow-hidden rounded-[2rem] border border-[#c9a227]/30 bg-gradient-to-br from-[#7a0c0c]/40 via-black/50 to-[#7a0c0c]/40 p-6 transition-all duration-300 hover:scale-[1.04] hover:border-[#f3d36b] hover:shadow-2xl hover:shadow-[#c9a227]/20">
               <div className="mb-4 flex justify-center">
-                <div className="flex h-14 min-w-[56px] items-center justify-center rounded-xl border border-[#c9a227]/40 bg-black/40 px-3 text-sm font-black text-[#f3d36b]">
-                  {player.badge}
+                <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-xl border border-[#c9a227]/40 bg-black/40">
+                  {player.logo ? (
+                    <img src={player.logo} alt={player.school} className="h-[70%] w-[70%] object-contain" />
+                  ) : (
+                    <span className="text-sm font-black text-[#f3d36b]">{player.badge}</span>
+                  )}
                 </div>
               </div>
               <div className="text-center text-xl font-semibold">{player.name}</div>
