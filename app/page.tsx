@@ -15,7 +15,7 @@ export default function BasketballProgramWebsite() {
 
   const heroImageTransform = `translateY(${Math.min(scrollY * 0.18, 70)}px) scale(1.04)`;
   const heroContentTransform = `translateY(${Math.min(scrollY * 0.06, 20)}px)`;
-  const navItems = ["Home", "About", "Schedule", "Roster", "Coaches", "Alumni", "Camps", "News", "Contact"];
+  const navItems = ["Home", "About", "Schedule", "Roster", "Coaches", "Alumni", "Camps", "News", "Nuer Deng Memorial Scholarship"];
 
   const values = [
     "Compete with toughness and pride",
