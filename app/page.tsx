@@ -147,6 +147,38 @@ export default function BasketballProgramWebsite() {
       highlights: ["Program foundation", "Early identity", "Long-term vision"],
       summary: "A foundational roster that helped establish the direction and expectations of Judge Memorial basketball.",
     },
+
+    // 🔥 HISTORIC CHAMPIONSHIP TEAMS
+    {
+      id: "roster-2008",
+      season: "2007–08",
+      label: "State Champions",
+      description: "A championship team that cemented Judge Memorial’s dominance and competitive legacy.",
+      href: "#",
+      image: "/roster-2008.jpg",
+      highlights: ["2008 state champions", "Elite roster", "Historic run"],
+      summary: "A dominant group that brought a state title back to Judge Memorial.",
+    },
+    {
+      id: "roster-2006",
+      season: "2005–06",
+      label: "State Champions",
+      description: "A defining team that delivered a state championship and elevated the program.",
+      href: "#",
+      image: "/roster-2006.jpg",
+      highlights: ["2006 state champions", "Program milestone", "Legacy builders"],
+      summary: "A championship squad that helped shape the modern era of Judge Memorial basketball.",
+    },
+    {
+      id: "roster-1980",
+      season: "1979–80",
+      label: "State Champions",
+      description: "The original championship team that set the foundation for Judge Memorial basketball.",
+      href: "#",
+      image: "/roster-1980.jpg",
+      highlights: ["1980 state champions", "Program foundation", "Historic legacy"],
+      summary: "The team that started it all and established a championship tradition.",
+    },
   ];
 
   const newsItems = [
