@@ -26,16 +26,7 @@ export default function BasketballProgramWebsite() {
 
   const championships = [1980, 2006, 2008, 2024];
 
-  const upcomingGames = [
-    { date: "Nov 18", opponent: "Weber HS", location: "Away", time: "TBD" },
-    { date: "Nov 20", opponent: "Skyline HS", location: "Home", time: "TBD" },
-    { date: "Nov 24", opponent: "Brighton HS", location: "Home", time: "TBD" },
-    { date: "Dec 2", opponent: "West HS", location: "Away", time: "TBD" },
-    { date: "Dec 4", opponent: "West Field HS", location: "Home", time: "TBD" },
-    { date: "Dec 11", opponent: "Summit Academy HS", location: "Home", time: "TBD" },
-  ];
-
-  const fullSchedule = [
+    const fullSchedule = [
     {
       month: "November",
       games: [
@@ -52,8 +43,8 @@ export default function BasketballProgramWebsite() {
         { date: "11", opponent: "Summit Academy HS", location: "Home" },
         { date: "15", opponent: "Murray HS", location: "Away" },
         { date: "18", opponent: "Juan Diego HS", location: "Away" },
-        { date: "28", opponent: "Snow Canyon HS - Oly Autism Classic", location: "Neutral" },
-        { date: "30", opponent: "Springville HS - Oly Autism Classic", location: "Neutral" },
+        { date: "28", opponent: "Snow Canyon HS-Oly Autism Classic", location: "Neutral" },
+        { date: "30", opponent: "Springville HS-Oly Autism Classic", location: "Neutral" },
       ],
     },
     {
@@ -268,8 +259,7 @@ export default function BasketballProgramWebsite() {
 
         <div className="relative mx-auto grid min-h-[82vh] max-w-7xl gap-12 px-4 py-16 sm:px-6 sm:py-20 md:grid-cols-[1.08fr_0.92fr] md:py-28" style={{ transform: heroContentTransform }}>
           <div className="flex flex-col justify-center">
-            <div className="mb-5 inline-flex w-fit items-center gap-3 rounded-full border border-[#c9a227]/35 bg-black/45 px-4 py-2 text-xs uppercase tracking-[0.25em] text-[#f3d36b] backdrop-blur-sm">
-              <span className="h-2 w-2 rounded-full bg-[#f3d36b]" />
+            <div className="mb-5 inline-flex w-fit items-center gap-3 rounded-full border border-[#c9a227]/35 bg-black/45 px-4 py-2 text-xs uppercase tracking-[0.18em] text-[#f3d36b] backdrop-blur-sm">
               Tradition • Toughness • Brotherhood
             </div>
 
@@ -415,12 +405,8 @@ export default function BasketballProgramWebsite() {
               <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Schedule Overview</div>
               <div className="mt-2 text-2xl font-bold text-white">Season at a Glance</div>
             </div>
-            <div className="flex flex-wrap gap-2">
-              {["Home", "Away", "Neutral"].map((item) => (
-                <span key={item} className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs uppercase tracking-[0.2em] text-white/70">
-                  {item}
-                </span>
-              ))}
+            <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f3d36b]">
+              Official Schedule Coming Soon
             </div>
           </div>
 
@@ -441,45 +427,6 @@ export default function BasketballProgramWebsite() {
                     </div>
                   ))}
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mb-8">
-          <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Upcoming Games</div>
-        </div>
-
-        <div className="overflow-hidden rounded-[2rem] border border-[#c9a227]/20 bg-[#7a0c0c]/20">
-          <div className="hidden grid-cols-4 border-b border-white/10 px-6 py-4 text-xs uppercase tracking-[0.25em] text-white/45 md:grid">
-            <div>Date</div>
-            <div>Opponent</div>
-            <div>Location</div>
-            <div>Time</div>
-          </div>
-
-          <div className="hidden md:block">
-            {upcomingGames.map((game) => (
-              <div key={`${game.date}-${game.opponent}`} className="grid grid-cols-4 border-b border-white/10 px-6 py-5 text-sm last:border-b-0">
-                <div className="font-semibold">{game.date}</div>
-                <div>{game.opponent}</div>
-                <div className="text-white/70">{game.location}</div>
-                <div className="text-white/70">{game.time}</div>
-              </div>
-            ))}
-          </div>
-
-          <div className="grid gap-3 p-3 md:hidden">
-            {upcomingGames.map((game) => (
-              <div key={`mobile-${game.date}-${game.opponent}`} className="rounded-[1.25rem] border border-white/10 bg-black/20 p-4">
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <div className="text-lg font-bold text-white">{game.opponent}</div>
-                    <div className="mt-1 text-xs uppercase tracking-[0.2em] text-[#c9a227]">{game.location}</div>
-                  </div>
-                  <div className="rounded-full bg-[#b5122b] px-3 py-2 text-xs font-bold uppercase tracking-[0.18em] text-white">{game.date}</div>
-                </div>
-                <div className="mt-3 text-sm text-white/65">Time: {game.time}</div>
               </div>
             ))}
           </div>
@@ -773,26 +720,6 @@ export default function BasketballProgramWebsite() {
         © 2026 Judge Memorial Catholic HS Basketball. All rights reserved.
       </footer>
 
-      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-[#c9a227]/20 bg-[#120606]/95 px-3 py-3 backdrop-blur sm:hidden">
-        <div className="mx-auto grid max-w-md grid-cols-5 gap-2">
-          {[
-            { label: "Home", href: "#home", icon: "⌂" },
-            { label: "Schedule", href: "#schedule", icon: "◴" },
-            { label: "Roster", href: "#roster", icon: "◎" },
-            { label: "Alumni", href: "#alumni", icon: "★" },
-            { label: "Contact", href: "#contact", icon: "✉" },
-          ].map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="flex flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-2 py-2 text-center text-[10px] font-semibold uppercase tracking-[0.14em] text-white/80 active:scale-[0.98]"
-            >
-              <span className="mb-1 text-sm text-[#f3d36b]">{item.icon}</span>
-              <span>{item.label}</span>
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
+      
   );
 }
