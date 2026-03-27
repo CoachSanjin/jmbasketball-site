@@ -145,7 +145,7 @@ export default function BasketballProgramWebsite() {
       href: "#",
       image: "/roster-2021.jpg",
       highlights: ["Program foundation", "Early identity", "Long-term vision"],
-      summary: "A foundational roster that helped establish the direction and expectations of Judge Memorial basketball.",
+      summary: "Coach Sanjin's 1st season. A foundational roster that helped establish the direction and expectations of Judge Memorial basketball.",
     },
 
     // 🔥 HISTORIC CHAMPIONSHIP TEAMS
