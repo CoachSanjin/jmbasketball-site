@@ -87,6 +87,15 @@ export default function BasketballProgramWebsite() {
     { id: "dom-burns", name: "Dom Burns", school: "Carroll University (WI)", year: "Class of 2021 • Committed", badge: "CU" },
   ];
 
+  const previousRosters = [
+    { id: "roster-2025-26", season: "2025–26", label: "Next Up", description: "The next wave of Judge Memorial basketball that built on championship standards and prepared for another competitive season.", href: "#", image: "/roster-2026.jpg" },
+    { id: "roster-2024-25", season: "2024–25", label: "State Title Defense", description: "The roster that helped continue Judge Memorial’s championship standard.", href: "#", image: "/roster-2025.jpg" },
+    { id: "roster-2023-24", season: "2023–24", label: "State Champions", description: "The team that captured the 2024 state championship and set the standard for Judge Memorial basketball.", href: "#", image: "/roster-2024.jpg" },
+    { id: "roster-2022-23", season: "2022–23", label: "Building the Standard", description: "A key developmental year for the program.", href: "#", image: "/roster-2023.jpg" },
+    { id: "roster-2021-22", season: "2021–22", label: "Program Growth", description: "Continuing to build a competitive foundation.", href: "#", image: "/roster-2022.jpg" },
+    { id: "roster-2020-21", season: "2020–21", label: "Foundation Year", description: "Laying the groundwork for the program’s future success.", href: "#", image: "/roster-2021.jpg" },
+  ];
+
   const newsItems = [
     {
       title: "Summer Camp Registration Open",
@@ -127,7 +136,7 @@ export default function BasketballProgramWebsite() {
       name: "Arual Deng",
       initials: "AD",
       role: "Academic Advisor",
-      image: "",
+      image: "/arual.jpg",
       bio: "Supporting student-athlete academic success and accountability within the basketball program.",
     },
   ];
@@ -554,6 +563,42 @@ export default function BasketballProgramWebsite() {
               <div className="mt-2 text-center font-medium text-[#f3d36b]">{player.school}</div>
               <div className="mt-1 text-center text-sm text-white/60">{player.year}</div>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="previous-rosters" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="mb-8">
+          <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Program Archive</div>
+          <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Previous Rosters</h2>
+          <p className="mt-3 max-w-2xl text-white/65">
+            Explore past Judge Memorial teams and keep a record of the players who helped build the program.
+          </p>
+        </div>
+
+        <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+          {previousRosters.map((roster) => (
+            <a key={roster.id} href={roster.href} className="group overflow-hidden rounded-[2rem] border border-[#c9a227]/20 bg-[#7a0c0c]/20 transition hover:border-[#c9a227]/40 hover:shadow-xl">
+              <div className="relative h-40 w-full overflow-hidden">
+                <img src={roster.image} alt={roster.season} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-black/40" />
+                <div className="absolute top-3 left-3 rounded-full bg-black/60 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#f3d36b]">
+                  {roster.season}
+                </div>
+                {roster.season === "2023–24" && (
+                  <div className="absolute top-3 right-3 rounded-full bg-[#c9a227] px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-[#3a0a0a] shadow-lg">
+                    🏆 Champions
+                  </div>
+                )}
+              </div>
+              <div className="p-5">
+                <div className="text-xl font-bold text-white">{roster.label}</div>
+                <p className="mt-2 text-sm text-white/65">{roster.description}</p>
+                <div className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-[#f3d36b] group-hover:underline">
+                  View Roster →
+                </div>
+              </div>
+            </a>
           ))}
         </div>
       </section>
