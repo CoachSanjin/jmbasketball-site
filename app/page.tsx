@@ -719,6 +719,6 @@ export default function BasketballProgramWebsite() {
         </div>
         © 2026 Judge Memorial Catholic HS Basketball. All rights reserved.
       </footer>
-      
+    </div>
   );
 }
