@@ -15,7 +15,7 @@ export default function BasketballProgramWebsite() {
 
   const heroImageTransform = `translateY(${Math.min(scrollY * 0.18, 70)}px) scale(1.04)`;
   const heroContentTransform = `translateY(${Math.min(scrollY * 0.06, 20)}px)`;
-  const navItems = ["Home", "About", "Schedule", "Roster", "Coaches", "Alumni", "Scholarship", "Camps", "News", "Contact"];
+  const navItems = ["Home", "About", "Schedule", "Roster", "Coaches", "Alumni", "Scholarship", "Utah Branded", "Camps", "News", "Contact"];
 
   const values = [
     "Compete with toughness and pride",
@@ -141,7 +141,7 @@ export default function BasketballProgramWebsite() {
       id: "roster-2020-21",
       season: "2020–21",
       label: "Foundation Year",
-      description: "Laying the groundwork for the program’s future success.",
+      description: "Coach Sanjin’s 1st season as head coach; laying the groundwork for the program’s future success.",
       href: "#",
       image: "/roster-2021.jpg",
       highlights: ["Program foundation", "Early identity", "Long-term vision"],
@@ -258,9 +258,7 @@ export default function BasketballProgramWebsite() {
             ))}
           </nav>
 
-          <a href="#contact" className="rounded-full border border-[#c9a227]/50 px-4 py-2 text-xs font-semibold text-white transition hover:bg-[#c9a227] hover:text-[#3a0a0a] sm:text-sm">
-            Contact
-          </a>
+          
         </div>
 
         <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 pb-3 sm:hidden">
@@ -554,6 +552,30 @@ export default function BasketballProgramWebsite() {
         </div>
       </section>
 
+      <section id="utah branded" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="grid gap-8 rounded-[2rem] border border-[#c9a227]/20 bg-gradient-to-br from-[#7a0c0c]/30 via-black/40 to-[#7a0c0c]/30 p-6 sm:p-8 md:grid-cols-[1.2fr_0.8fr] md:p-10">
+          <div>
+            <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Utah Branded</div>
+            <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Youth Development Program</h2>
+            <p className="mt-5 max-w-2xl leading-8 text-white/70">
+              Led by Coaches Jesus Martinez & Jake Bero-Van Wagoner, Utah Branded is our official youth development program, focused on building fundamentals, confidence, and a love for the game at an early age. We emphasize skill development, competitive play, and preparing athletes to succeed within the Judge Memorial basketball program.
+            </p>
+            <p className="mt-4 max-w-2xl leading-8 text-white/70">
+              Through structured training, mentorship, and consistent coaching, Utah Branded helps young players grow both on and off the court while staying connected to the culture and standards of Judge Memorial basketball.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-[2rem] bg-[#c9a227]/20 blur-2xl" />
+              <div className="relative h-56 w-56 overflow-hidden rounded-[2rem] border border-[#c9a227]/40 bg-black/40">
+                <img src="/utah-branded.jpg" alt="Utah Branded" className="h-full w-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="camps" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
         <div className="grid gap-8 rounded-[2rem] border border-[#c9a227]/20 bg-[#7a0c0c]/20 p-6 sm:p-8 md:grid-cols-[1.2fr_0.8fr] md:p-10">
           <div>
@@ -632,7 +654,7 @@ export default function BasketballProgramWebsite() {
                 <div className="rounded-full bg-black/60 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#f3d36b]">
                   {roster.season}
                 </div>
-                {roster.season === "2023–24" && (
+                {["2023–24","2007–08","2005–06","1979–80"].includes(roster.season) && (
                   <div className="rounded-full bg-[#c9a227] px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-[#3a0a0a] shadow-lg">
                     🏆 Champions
                   </div>
@@ -663,7 +685,7 @@ export default function BasketballProgramWebsite() {
         <div className="rounded-[2rem] border border-[#c9a227]/30 bg-gradient-to-r from-[#7a0c0c]/40 via-black/50 to-[#7a0c0c]/40 p-6 sm:p-8 md:p-10 text-center">
           <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Nuer Deng Memorial Scholarship</div>
           <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Honoring Legacy. Supporting Futures.
-          <div className="mt-3 text-sm font-semibold uppercase tracking-[0.35em] text-[#f3d36b]">LLN</div></h2>
+          <div className="mt-3 text-sm font-semibold uppercase tracking-[0.35em] text-[#f3d36b]">Live Like Nuri</div></h2>
 
           <div className="mt-6 flex flex-col items-center gap-6">
             <div className="relative">
@@ -756,7 +778,12 @@ export default function BasketballProgramWebsite() {
             <div className="rounded-[1.5rem] border border-[#c9a227]/20 bg-black/25 p-5">
               <div className="text-sm uppercase tracking-[0.25em] text-white/45">Social</div>
               <div className="mt-2 text-lg font-semibold">
-                📸 Instagram:
+                <span className="inline-flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5 text-[#f3d36b]" fill="currentColor">
+                  <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-2.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/>
+                </svg>
+                <span>Instagram:</span>
+              </span>
                 <a href="https://instagram.com/judgebasketball" target="_blank" rel="noopener noreferrer" className="ml-1 text-[#f3d36b] hover:underline">
                   @judgebasketball
                 </a>
