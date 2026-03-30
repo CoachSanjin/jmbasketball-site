@@ -30,7 +30,7 @@ export default function BasketballProgramWebsite() {
     {
       month: "November",
       games: [
-        { date: "18", opponent: "Deer Creek HS", location: "Away" },
+        { date: "18", opponent: "Weber HS", location: "Away" },
         { date: "20", opponent: "Skyline HS", location: "Home" },
         { date: "24", opponent: "Brighton HS", location: "Home" },
       ],
@@ -552,59 +552,7 @@ export default function BasketballProgramWebsite() {
         </div>
       </section>
 
-      <section id="utah branded" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
-        <div className="grid gap-8 rounded-[2rem] border border-[#c9a227]/20 bg-gradient-to-br from-[#7a0c0c]/30 via-black/40 to-[#7a0c0c]/30 p-6 sm:p-8 md:grid-cols-[1.2fr_0.8fr] md:p-10">
-          <div>
-            <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Utah Branded</div>
-            <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Youth Development Program</h2>
-            <p className="mt-5 max-w-2xl leading-8 text-white/70">
-              Led by Coaches Jesus Martinez & Jake Bero-Van Wagoner, Utah Branded is our official youth development program, focused on building fundamentals, confidence, and a love for the game at an early age. We emphasize skill development, competitive play, and preparing athletes to succeed within the Judge Memorial basketball program.
-            </p>
-            <p className="mt-4 max-w-2xl leading-8 text-white/70">
-              Through structured training, mentorship, and consistent coaching, Utah Branded helps young players grow both on and off the court while staying connected to the culture and standards of Judge Memorial basketball.
-            </p>
-          </div>
-
-          <div className="flex items-center justify-center">
-            <div className="relative">
-              <div className="absolute inset-0 rounded-[2rem] bg-[#c9a227]/20 blur-2xl" />
-              <div className="relative h-56 w-56 overflow-hidden rounded-[2rem] border border-[#c9a227]/40 bg-black/40">
-                <img src="/utah-branded.jpg" alt="Utah Branded" className="h-full w-full object-cover" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="camps" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
-        <div className="grid gap-8 rounded-[2rem] border border-[#c9a227]/20 bg-[#7a0c0c]/20 p-6 sm:p-8 md:grid-cols-[1.2fr_0.8fr] md:p-10">
-          <div>
-            <div className="text-sm uppercase tracking-[0.3em] text-white/50">Camps & Youth Development</div>
-            <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Grow the game in our community</h2>
-            <p className="mt-5 max-w-2xl leading-8 text-white/70">
-              Led by Coach Sanjin, Coach Zeus, & Coach Jake, our youth camps create a fun, energetic environment for players to improve fundamentals, learn teamwork, and connect with our basketball program.
-            </p>
-          </div>
-          <div className="rounded-[1.75rem] border border-[#c9a227]/10 bg-black/30 p-6">
-            <div className="text-lg font-semibold">Featured Camp</div>
-            <div className="mt-4 flex items-center gap-3 text-2xl font-bold">
-              Summer Skills Camp
-              <span className="rounded-full border border-[#c9a227]/40 bg-[#c9a227]/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#f3d36b]">
-                Limited Spots
-              </span>
-            </div>
-            <div className="mt-3 text-white/65">July 14–16, 2026 • Grades 3–8 • Judge Memorial Gym</div>
-            <a
-              href="https://www.judgememorial.org/summer-classes-camps"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-block rounded-2xl bg-[#c9a227] px-5 py-3 font-semibold text-[#3a0a0a] transition hover:scale-[1.02]"
-            >
-              Register Now
-            </a>
-          </div>
-        </div>
-      </section>
+      
 
       <section id="alumni" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
         <div className="mb-8">
@@ -720,6 +668,60 @@ export default function BasketballProgramWebsite() {
               className="rounded-2xl bg-[#c9a227] px-6 py-3 font-semibold text-[#3a0a0a] shadow-lg shadow-black/25 transition hover:scale-[1.02]"
             >
               Apply for Scholarship
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="utah branded" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="grid gap-8 rounded-[2rem] border border-[#c9a227]/20 bg-gradient-to-br from-[#7a0c0c]/30 via-black/40 to-[#7a0c0c]/30 p-6 sm:p-8 md:grid-cols-[1.2fr_0.8fr] md:p-10">
+          <div>
+            <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Utah Branded</div>
+            <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Youth Development Program</h2>
+            <p className="mt-5 max-w-2xl leading-8 text-white/70">
+              Led by Coaches Jesus Martinez & Jake Bero-Van Wagoner, Utah Branded is our official youth development program, focused on building fundamentals, confidence, and a love for the game at an early age. We emphasize skill development, competitive play, and preparing athletes to succeed within the Judge Memorial basketball program.
+            </p>
+            <p className="mt-4 max-w-2xl leading-8 text-white/70">
+              Through structured training, mentorship, and consistent coaching, Utah Branded helps young players grow both on and off the court while staying connected to the culture and standards of Judge Memorial basketball.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-[2rem] bg-[#c9a227]/20 blur-2xl" />
+              <div className="relative h-56 w-56 overflow-hidden rounded-[2rem] border border-[#c9a227]/40 bg-black/40">
+                <img src="/utah-branded.jpg" alt="Utah Branded" className="h-full w-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="camps" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="grid gap-8 rounded-[2rem] border border-[#c9a227]/20 bg-[#7a0c0c]/20 p-6 sm:p-8 md:grid-cols-[1.2fr_0.8fr] md:p-10">
+          <div>
+            <div className="text-sm uppercase tracking-[0.3em] text-white/50">Camps & Youth Development</div>
+            <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Grow the game in our community</h2>
+            <p className="mt-5 max-w-2xl leading-8 text-white/70">
+              Led by Coach Sanjin, Coach Zeus, & Coach Jake, our youth camps create a fun, energetic environment for players to improve fundamentals, learn teamwork, and connect with our basketball program.
+            </p>
+          </div>
+          <div className="rounded-[1.75rem] border border-[#c9a227]/10 bg-black/30 p-6">
+            <div className="text-lg font-semibold">Featured Camp</div>
+            <div className="mt-4 flex items-center gap-3 text-2xl font-bold">
+              Summer Skills Camp
+              <span className="rounded-full border border-[#c9a227]/40 bg-[#c9a227]/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#f3d36b]">
+                Limited Spots
+              </span>
+            </div>
+            <div className="mt-3 text-white/65">July 14–16, 2026 • Grades 3–8 • Judge Memorial Gym</div>
+            <a
+              href="https://www.judgememorial.org/summer-classes-camps"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-block rounded-2xl bg-[#c9a227] px-5 py-3 font-semibold text-[#3a0a0a] transition hover:scale-[1.02]"
+            >
+              Register Now
             </a>
           </div>
         </div>
