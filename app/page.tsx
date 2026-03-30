@@ -15,7 +15,7 @@ export default function BasketballProgramWebsite() {
 
   const heroImageTransform = `translateY(${Math.min(scrollY * 0.18, 70)}px) scale(1.04)`;
   const heroContentTransform = `translateY(${Math.min(scrollY * 0.06, 20)}px)`;
-  const navItems = ["Home", "About", "Schedule", "Roster", "Coaches", "Alumni", "Camps", "News", "Nuer Deng Memorial Scholarship"];
+  const navItems = ["Home", "About", "Schedule", "Roster", "Coaches", "Alumni", "Scholarship", "Camps", "News", "Contact"];
 
   const values = [
     "Compete with toughness and pride",
@@ -145,7 +145,7 @@ export default function BasketballProgramWebsite() {
       href: "#",
       image: "/roster-2021.jpg",
       highlights: ["Program foundation", "Early identity", "Long-term vision"],
-      summary: "Coach Sanjin's 1st season. A foundational roster that helped establish the direction and expectations of Judge Memorial basketball.",
+      summary: "A foundational roster that helped establish the direction and expectations of Judge Memorial basketball.",
     },
 
     // 🔥 HISTORIC CHAMPIONSHIP TEAMS
@@ -276,6 +276,8 @@ export default function BasketballProgramWebsite() {
         </div>
       </header>
 
+      
+
       <section id="home" className="relative overflow-hidden">
         <img
           src="/gym.jpg"
@@ -372,6 +374,8 @@ export default function BasketballProgramWebsite() {
           <span>Train. Compete. Represent.</span>
         </div>
       </section>
+
+      
 
       <section id="about" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
         <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end md:gap-6">
@@ -612,7 +616,7 @@ export default function BasketballProgramWebsite() {
         </div>
       </section>
 
-      <section id="previous-rosters" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
+            <section id="previous-rosters" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
         <div className="mb-8">
           <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Program Archive</div>
           <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Previous Rosters</h2>
@@ -652,6 +656,50 @@ export default function BasketballProgramWebsite() {
               </button>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section id="scholarship" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="rounded-[2rem] border border-[#c9a227]/30 bg-gradient-to-r from-[#7a0c0c]/40 via-black/50 to-[#7a0c0c]/40 p-6 sm:p-8 md:p-10 text-center">
+          <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Nuer Deng Memorial Scholarship</div>
+          <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Honoring Legacy. Supporting Futures.
+          <div className="mt-3 text-sm font-semibold uppercase tracking-[0.35em] text-[#f3d36b]">LLN</div></h2>
+
+          <div className="mt-6 flex flex-col items-center gap-6">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/20 blur-2xl" />
+              <div className="relative h-40 w-40 overflow-hidden rounded-2xl border border-[#c9a227]/40 bg-black/40">
+                <img src="/nuer.jpg" alt="Nuer Deng" className="h-full w-full object-cover" />
+              </div>
+            </div>
+            <div className="text-sm tracking-[0.2em] text-[#f3d36b]">8.18.2007 – 7.14.2024</div>
+
+            <div className="relative">
+              <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/20 blur-2xl" />
+              <div className="relative h-32 w-32 overflow-hidden rounded-2xl border border-[#c9a227]/40 bg-black/40">
+                <img src="/nuer-number-2.jpg" alt="Nuer #2" className="h-full w-full object-cover" />
+              </div>
+            </div>
+          </div>
+
+          <p className="mt-6 max-w-2xl mx-auto text-white/70 leading-7">
+            The Nuer Deng Memorial Scholarship is dedicated to honoring Nuer’s legacy & room-lighting smile by supporting student-athletes who embody character, resilience, and commitment both on and off the court.
+          </p>
+
+          <p className="mt-4 max-w-2xl mx-auto text-white/70 leading-7">
+            The Nuer Deng Memorial Scholarship is awarded each year in the late spring to a deserving Judge Memorial student to assist with tuition costs for the upcoming Judge Memorial school year. The selection team will consider character, integrity, and financial needs of qualified students in selecting a recipient.
+          </p>
+
+          <div className="mt-6 flex justify-center">
+            <a
+              href="https://static1.squarespace.com/static/616848c08590a6214021d98a/t/698606dda4e8ff14fccefe5c/1770391261638/Nuer+Deng+Memorial+Scholarship.docx.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-2xl bg-[#c9a227] px-6 py-3 font-semibold text-[#3a0a0a] shadow-lg shadow-black/25 transition hover:scale-[1.02]"
+            >
+              Apply for Scholarship
+            </a>
+          </div>
         </div>
       </section>
 
