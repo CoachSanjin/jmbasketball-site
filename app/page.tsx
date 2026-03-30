@@ -30,7 +30,7 @@ export default function BasketballProgramWebsite() {
     {
       month: "November",
       games: [
-        { date: "18", opponent: "Weber HS", location: "Away" },
+        { date: "18", opponent: "Deer Creek HS", location: "Away" },
         { date: "20", opponent: "Skyline HS", location: "Home" },
         { date: "24", opponent: "Brighton HS", location: "Home" },
       ],
