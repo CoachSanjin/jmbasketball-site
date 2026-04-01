@@ -15,7 +15,7 @@ export default function BasketballProgramWebsite() {
 
   const heroImageTransform = `translateY(${Math.min(scrollY * 0.18, 70)}px) scale(1.04)`;
   const heroContentTransform = `translateY(${Math.min(scrollY * 0.06, 20)}px)`;
-  const navItems = ["Home", "About", "Schedule", "Roster", "Coaches", "Alumni", "Scholarship", "Utah Branded", "Camps", "News", "Contact"];
+  const navItems = ["Home", "About", "Schedule", "Roster", "Coaches", "Alumni", "Scholarships", "Utah Branded", "Camps", "News", "Contact"];
 
   const values = [
     "Compete with toughness and pride",
@@ -30,7 +30,7 @@ export default function BasketballProgramWebsite() {
     {
       month: "November",
       games: [
-        { date: "18", opponent: "Weber HS", location: "Away" },
+        { date: "17", opponent: "Deer Creek HS", location: "Away" },
         { date: "20", opponent: "Skyline HS", location: "Home" },
         { date: "24", opponent: "Brighton HS", location: "Home" },
       ],
@@ -67,6 +67,7 @@ export default function BasketballProgramWebsite() {
         { date: "6", opponent: "Layton Christian", location: "Away" },
         { date: "9", opponent: "Cottonwood HS", location: "Home" },
         { date: "12", opponent: "East HS", location: "Away" },
+        { date: "16-27", opponent: "4A State Tourney", location: "TBD" },        
       ],
     },
   ];
