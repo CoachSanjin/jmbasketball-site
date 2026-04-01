@@ -30,7 +30,7 @@ export default function BasketballProgramWebsite() {
     {
       month: "November",
       games: [
-        { date: "17", opponent: "Deer Creek HS", location: "Away" },
+        { date: "18", opponent: "Weber HS", location: "Away" },
         { date: "20", opponent: "Skyline HS", location: "Home" },
         { date: "24", opponent: "Brighton HS", location: "Home" },
       ],
@@ -633,27 +633,62 @@ export default function BasketballProgramWebsite() {
         <div className="rounded-[2rem] border border-[#c9a227]/30 bg-gradient-to-r from-[#7a0c0c]/40 via-black/50 to-[#7a0c0c]/40 p-6 sm:p-8 md:p-10 text-center">
           <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Nuer Deng Memorial Scholarship</div>
           <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Honoring Legacy. Supporting Futures.
-          <div className="mt-3 text-sm font-semibold uppercase tracking-[0.35em] text-[#f3d36b]">Live Like Nuri</div></h2>
+          <div className="mt-3 text-sm font-semibold uppercase tracking-[0.35em] text-[#f3d36b]">Live Like Nuer</div></h2>
 
-          <div className="mt-6 flex flex-col items-center gap-6">
-            <div className="relative">
-              <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/20 blur-2xl" />
-              <div className="relative h-40 w-40 overflow-hidden rounded-2xl border border-[#c9a227]/40 bg-black/40">
-                <img src="/nuer.jpg" alt="Nuer Deng" className="h-full w-full object-cover" />
+          <div className="mt-6 flex flex-col items-center gap-8">
+            {/* Top row: 3 images */}
+            <div className="grid grid-cols-3 gap-4 items-center">
+              <div className="relative">
+                <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/15 blur-2xl" />
+                <div className="relative h-28 w-28 overflow-hidden rounded-2xl border border-[#c9a227]/30 bg-black/40">
+                  <img src="/nuer-1.jpg" alt="Nuer memory" className="h-full w-full object-cover" />
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/25 blur-2xl" />
+                <div className="relative h-40 w-40 overflow-hidden rounded-2xl border border-[#c9a227]/40 bg-black/40">
+                  <img src="/nuer.jpg" alt="Nuer Deng" className="h-full w-full object-cover" />
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/15 blur-2xl" />
+                <div className="relative h-28 w-28 overflow-hidden rounded-2xl border border-[#c9a227]/30 bg-black/40">
+                  <img src="/nuer-2.jpg" alt="Nuer memory" className="h-full w-full object-cover" />
+                </div>
               </div>
             </div>
+
             <div className="text-sm tracking-[0.2em] text-[#f3d36b]">8.18.2007 – 7.14.2024</div>
 
-            <div className="relative">
-              <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/20 blur-2xl" />
-              <div className="relative h-32 w-32 overflow-hidden rounded-2xl border border-[#c9a227]/40 bg-black/40">
-                <img src="/nuer-number-2.jpg" alt="Nuer #2" className="h-full w-full object-cover" />
+            {/* Bottom row: 3 images */}
+            <div className="grid grid-cols-3 gap-4 items-center">
+              <div className="relative">
+                <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/15 blur-2xl" />
+                <div className="relative h-24 w-24 overflow-hidden rounded-2xl border border-[#c9a227]/30 bg-black/40">
+                  <img src="/nuer-3.jpg" alt="Nuer memory" className="h-full w-full object-cover" />
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/20 blur-2xl" />
+                <div className="relative h-32 w-32 overflow-hidden rounded-2xl border border-[#c9a227]/40 bg-black/40">
+                  <img src="/nuer-number-2.jpg" alt="Nuer #2" className="h-full w-full object-cover" />
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/15 blur-2xl" />
+                <div className="relative h-24 w-24 overflow-hidden rounded-2xl border border-[#c9a227]/30 bg-black/40">
+                  <img src="/nuer-4.jpg" alt="Nuer memory" className="h-full w-full object-cover" />
+                </div>
               </div>
             </div>
           </div>
 
           <p className="mt-6 max-w-2xl mx-auto text-white/70 leading-7">
-            The Nuer Deng Memorial Scholarship is dedicated to honoring Nuer’s legacy & room-lighting smile by supporting student-athletes who embody character, resilience, and commitment both on and off the court.
+            Our players are taught to embody Nuer's character & carry themselves like he would, with an infectious smile no matter the situation. The Nuer Deng Memorial Scholarship is dedicated to honoring Nuer’s legacy & room-lighting smile by supporting student-athletes who embody character, resilience, and commitment both on and off the court.
           </p>
 
           <p className="mt-4 max-w-2xl mx-auto text-white/70 leading-7">
@@ -668,6 +703,30 @@ export default function BasketballProgramWebsite() {
               className="rounded-2xl bg-[#c9a227] px-6 py-3 font-semibold text-[#3a0a0a] shadow-lg shadow-black/25 transition hover:scale-[1.02]"
             >
               Apply for Scholarship
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="utah-fits-all" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="rounded-[2rem] border border-[#c9a227]/30 bg-gradient-to-r from-black/50 via-[#7a0c0c]/30 to-black/50 p-6 sm:p-8 md:p-10 text-center">
+          <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Utah Fits All Scholarship</div>
+          <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Expanding Opportunity for Student-Athletes</h2>
+
+          <p className="mt-6 max-w-2xl mx-auto text-white/70 leading-7">
+            The Utah Fits All Scholarship provides families with additional financial support options to help students access educational opportunities that best fit their needs. Within our program, this scholarship helps student-athletes continue their academic and athletic journey at Judge Memorial.
+          </p>
+
+          <p className="mt-4 max-w-2xl mx-auto text-white/70 leading-7">
+            We are committed to helping families navigate available resources and ensuring every student has the opportunity to grow within our basketball program, regardless of financial circumstances.
+          </p>
+
+          <div className="mt-6 flex justify-center">
+            <a
+              href="https://www.utaheducationfitsall.org/" target="_blank" rel="noopener noreferrer"
+              className="rounded-2xl border border-[#c9a227]/40 px-6 py-3 font-semibold text-[#f3d36b] transition hover:bg-[#c9a227]/10"
+            >
+              Learn More
             </a>
           </div>
         </div>
