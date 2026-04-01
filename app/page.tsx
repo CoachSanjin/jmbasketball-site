@@ -816,7 +816,8 @@ export default function BasketballProgramWebsite() {
               </p>
             </div>
           ))}
-        </div>
+
+          </div>
       </section>
 
       <section id="contact" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
