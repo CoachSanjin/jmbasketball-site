@@ -17,6 +17,20 @@ export default function BasketballProgramWebsite() {
   const heroContentTransform = `translateY(${Math.min(scrollY * 0.06, 20)}px)`;
   const navItems = ["Home", "About", "Schedule", "Roster", "Coaches", "Alumni", "Scholarships", "Utah Branded", "Camps", "News", "Contact"];
 
+  const navHrefMap: Record<string, string> = {
+    Home: "#home",
+    About: "#about",
+    Schedule: "#schedule",
+    Roster: "#roster",
+    Coaches: "#coaches",
+    Alumni: "#alumni",
+    Scholarships: "#scholarships",
+    "Utah Branded": "#utah-branded",
+    Camps: "#camps",
+    News: "#news",
+    Contact: "#contact",
+  };
+
   const values = [
     "Compete with toughness and pride",
     "Develop leaders",
@@ -253,7 +267,7 @@ export default function BasketballProgramWebsite() {
 
           <nav className="hidden gap-6 md:flex">
             {navItems.map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`} className="text-sm text-white/80 transition hover:text-[#c9a227]">
+              <a key={item} href={navHrefMap[item] ?? `#${item.toLowerCase()}`} className="text-sm text-white/80 transition hover:text-[#c9a227]">
                 {item}
               </a>
             ))}
@@ -630,32 +644,31 @@ export default function BasketballProgramWebsite() {
         </div>
       </section>
 
-      <section id="scholarship" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
+      <section id="scholarships" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
         <div className="rounded-[2rem] border border-[#c9a227]/30 bg-gradient-to-r from-[#7a0c0c]/40 via-black/50 to-[#7a0c0c]/40 p-6 sm:p-8 md:p-10 text-center">
           <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Nuer Deng Memorial Scholarship</div>
           <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">Honoring Legacy. Supporting Futures.
           <div className="mt-3 text-sm font-semibold uppercase tracking-[0.35em] text-[#f3d36b]">Live Like Nuer</div></h2>
 
-          <div className="mt-6 flex flex-col items-center gap-8">
-            {/* Top row: 3 images */}
-            <div className="grid grid-cols-3 gap-4 items-center">
+          <div className="mt-8 flex flex-col items-center gap-8">
+            <div className="grid w-full max-w-4xl grid-cols-3 items-center justify-items-center gap-6 sm:gap-8 md:gap-10">
               <div className="relative">
-                <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/15 blur-2xl" />
-                <div className="relative h-28 w-28 overflow-hidden rounded-2xl border border-[#c9a227]/30 bg-black/40">
+                <div className="absolute inset-0 rounded-[1.75rem] bg-[#c9a227]/15 blur-2xl" />
+                <div className="relative h-32 w-32 overflow-hidden rounded-[1.75rem] border border-[#c9a227]/30 bg-black/40 sm:h-40 sm:w-40">
                   <img src="/nuer-1.jpg" alt="Nuer memory" className="h-full w-full object-cover" />
                 </div>
               </div>
 
               <div className="relative">
-                <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/25 blur-2xl" />
-                <div className="relative h-40 w-40 overflow-hidden rounded-2xl border border-[#c9a227]/40 bg-black/40">
+                <div className="absolute inset-0 rounded-[1.75rem] bg-[#c9a227]/25 blur-2xl" />
+                <div className="relative h-44 w-44 overflow-hidden rounded-[1.75rem] border border-[#c9a227]/40 bg-black/40 sm:h-56 sm:w-56">
                   <img src="/nuer.jpg" alt="Nuer Deng" className="h-full w-full object-cover" />
                 </div>
               </div>
 
               <div className="relative">
-                <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/15 blur-2xl" />
-                <div className="relative h-28 w-28 overflow-hidden rounded-2xl border border-[#c9a227]/30 bg-black/40">
+                <div className="absolute inset-0 rounded-[1.75rem] bg-[#c9a227]/15 blur-2xl" />
+                <div className="relative h-32 w-32 overflow-hidden rounded-[1.75rem] border border-[#c9a227]/30 bg-black/40 sm:h-40 sm:w-40">
                   <img src="/nuer-2.jpg" alt="Nuer memory" className="h-full w-full object-cover" />
                 </div>
               </div>
@@ -663,25 +676,24 @@ export default function BasketballProgramWebsite() {
 
             <div className="text-sm tracking-[0.2em] text-[#f3d36b]">8.18.2007 – 7.14.2024</div>
 
-            {/* Bottom row: 3 images */}
-            <div className="grid grid-cols-3 gap-4 items-center">
+            <div className="grid w-full max-w-4xl grid-cols-3 items-center justify-items-center gap-6 sm:gap-8 md:gap-10">
               <div className="relative">
-                <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/15 blur-2xl" />
-                <div className="relative h-24 w-24 overflow-hidden rounded-2xl border border-[#c9a227]/30 bg-black/40">
+                <div className="absolute inset-0 rounded-[1.75rem] bg-[#c9a227]/15 blur-2xl" />
+                <div className="relative h-28 w-28 overflow-hidden rounded-[1.75rem] border border-[#c9a227]/30 bg-black/40 sm:h-36 sm:w-36">
                   <img src="/nuer-3.jpg" alt="Nuer memory" className="h-full w-full object-cover" />
                 </div>
               </div>
 
               <div className="relative">
-                <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/20 blur-2xl" />
-                <div className="relative h-32 w-32 overflow-hidden rounded-2xl border border-[#c9a227]/40 bg-black/40">
+                <div className="absolute inset-0 rounded-[1.75rem] bg-[#c9a227]/20 blur-2xl" />
+                <div className="relative h-36 w-36 overflow-hidden rounded-[1.75rem] border border-[#c9a227]/40 bg-black/40 sm:h-44 sm:w-44">
                   <img src="/nuer-number-2.jpg" alt="Nuer #2" className="h-full w-full object-cover" />
                 </div>
               </div>
 
               <div className="relative">
-                <div className="absolute inset-0 rounded-2xl bg-[#c9a227]/15 blur-2xl" />
-                <div className="relative h-24 w-24 overflow-hidden rounded-2xl border border-[#c9a227]/30 bg-black/40">
+                <div className="absolute inset-0 rounded-[1.75rem] bg-[#c9a227]/15 blur-2xl" />
+                <div className="relative h-28 w-28 overflow-hidden rounded-[1.75rem] border border-[#c9a227]/30 bg-black/40 sm:h-36 sm:w-36">
                   <img src="/nuer-4.jpg" alt="Nuer memory" className="h-full w-full object-cover" />
                 </div>
               </div>
@@ -733,7 +745,7 @@ export default function BasketballProgramWebsite() {
         </div>
       </section>
 
-      <section id="utah branded" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
+      <section id="utah-branded" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
         <div className="grid gap-8 rounded-[2rem] border border-[#c9a227]/20 bg-gradient-to-br from-[#7a0c0c]/30 via-black/40 to-[#7a0c0c]/30 p-6 sm:p-8 md:grid-cols-[1.2fr_0.8fr] md:p-10">
           <div>
             <div className="text-sm uppercase tracking-[0.3em] text-[#c9a227]">Utah Branded</div>
